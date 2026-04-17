@@ -1,0 +1,21 @@
+language,sentence,tokenization,top5_predictions,perplexity
+Telugu,nenu ikkadiki vastunnanu,nen | u | Ġ | ikk | ad | iki | Ġvast | un | nan | u,"k, , n, ,, j",2016.9
+Telugu,meeru ela unnaru,me | er | u | Ġel | a | Ġunn | aru,"el, ., ,, de, en",2816.42
+Telugu,nuvvu ela unnav,n | uv | vu | Ġel | a | Ġun | nav,"o, ajo, ig, v, ar",2887.4
+Telugu,okka nimisham agu,ok | ka | Ġn | im | ish | am | Ġag | u,"k, ., n, ,, sh",1387.35
+Telugu,naku Telugu vastundi,n | aku | ĠTel | ugu | Ġvast | und | i,", ,, ., (, k",3038.54
+Telugu,idi chala kashtanga undi,idi | Ġch | ala | Ġk | ash | t | anga | Ġund | i,"k, ch, n, ., ,",931.7
+Telugu,mee peru enti,me | e | Ġper | u | Ġent | i,",, per, ., qu, e",518.18
+Telugu,nenu intiki veltunna,nen | u | Ġint | iki | Ġvel | tun | na,",, ., vel, (, ;",12197.47
+Telugu,manaku chala pani undi,man | aku | Ġch | ala | Ġp | ani | Ġund | i,"k, ,, ., p, n",1513.0
+Telugu,ikkade kurchoni matladamu,ikk | ade | Ġk | urch | oni | Ġmat | lad | am | u,"k, ,, ., (, n",2137.27
+Telugu,mee number ivvagalara,me | e | Ġnumber | Ġiv | vag | al | ara,"., ,, , (, -",12319.76
+Telugu,adi evaru chepparu,adi | Ġev | aru | Ġche | pp | aru,"che, ,, ., k, (",9634.46
+Telugu,reyyi chala baagundi,rey | yi | Ġch | ala | Ġba | ag | und | i,",, ., (, k, n",1931.47
+Telugu,nenu maatladatam nerchukuntunna,nen | u | Ġma | at | lad | at | am | Ġner | chuk | unt | un | na,"., ,, at, t, k",2362.0
+Telugu,mee inti address cheppandi,me | e | Ġint | i | Ġaddress | Ġche | pp | andi,",, ., de, e, )",3972.09
+English,I am coming here,I | Ġam | Ġcoming | Ġhere,"to, for, because, with, ,",257.91
+English,How are you doing today,How | Ġare | Ġyou | Ġdoing | Ġtoday,"?, ?"", ,, ?', 's",16.75
+English,Wait one moment please,Wait | Ġone | Ġmoment | Ġplease,",, ., ."", ,"", and",291.99
+English,This is very difficult to understand,This | Ġis | Ġvery | Ġdifficult | Ġto | Ġunderstand,"., ,, how, why, what",23.32
+English,Let us sit here and talk,Let | Ġus | Ġsit | Ġhere | Ġand | Ġtalk,"about, for, to, ., a",52.58

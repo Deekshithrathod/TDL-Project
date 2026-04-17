@@ -1,0 +1,13 @@
+torch
+transformers
+tokenizers
+datasets
+accelerate
+peft
+safetensors
+huggingface_hub
+numpy
+pandas
+tqdm
+jupyter
+ipykernel

@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Model checkpoints & large artifacts (add to Git LFS instead if needed)
+models/
+*.bin
+*.safetensors
+*.pt
+*.ckpt
+
+# Tokenizer artifacts (generated, not source)
+tokenizers/*.json
+tokenizers/*.model
+
+# Data (raw corpus — too large for git)
+data/whatsapp_chats/
+data/*.zip
+
+# Claude Code
+.claude/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Env files
+.env
+.env.*

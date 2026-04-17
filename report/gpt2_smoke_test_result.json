@@ -1,0 +1,17 @@
+{
+  "prompt": "Hello, this is a quick GPT-2 smoke test.",
+  "device": "mps",
+  "logits_shape": [
+    1,
+    13,
+    50257
+  ],
+  "repo_dirs": [
+    "data",
+    "tokenizers",
+    "models",
+    "notebooks",
+    "report",
+    "demo"
+  ]
+}

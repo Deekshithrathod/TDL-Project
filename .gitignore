@@ -30,9 +30,10 @@ models/
 tokenizers/*.json
 tokenizers/*.model
 
-# Data (raw corpus — too large for git)
+# Data (raw corpus and generated outputs — too large for git)
 data/whatsapp_chats/
 data/*.zip
+data/processed/
 
 # Claude Code
 .claude/

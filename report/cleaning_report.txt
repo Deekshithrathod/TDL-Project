@@ -1,0 +1,11 @@
+Total messages parsed:     325478
+After filtering:           296903  (91.2% kept)
+Breakdown of filtered:
+  - Media/system:          0
+  - Too short (<3 words):  25178
+  - URL-only:              449
+  - Emoji-only:            2948
+Unique senders found:      14853  → USER_A ... USER_B ... USER_C ... USER_D ... USER_E ... (+ 14848 more)
+
+Example (before): What's your opinion on fuel grade ethanol production in India?
+Example (after):  what's your opinion on fuel grade ethanol production in india

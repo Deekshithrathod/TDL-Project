@@ -71,6 +71,35 @@ Chronological log of completed tasks for the Romanized Telugu Language Model pro
 
 ---
 
+## Week 2 — Data Pipeline
+
+### Task 2.1 — WhatsApp Data Cleaning Pipeline
+**What was done:**
+- Audited all 298 chat files to determine actual format: `[YYYY-MM-DD HH:MM] Sender: message` (~99% of lines), with a small number of legacy `DD/MM/YY, HH:MM AM/PM - Sender: message` lines
+- Discovered the corpus contains ~50K multi-line continuation messages (message bodies that wrap across multiple lines with no timestamp prefix) — implemented joining logic to reassemble them before processing
+- Wrote `scripts/clean_data.py` with full argparse CLI (`--input`, `--output`, `--report`); accepts a single file or a directory
+- Encoding: tries `utf-8-sig` first, falls back to `latin-1` with a warning
+- Filtering: removes URL-only messages, emoji-only messages (via `emoji` library), system messages (`<Media omitted>`, deleted messages, encryption notices), and messages under 3 words after normalisation
+- Anonymisation: collects all unique senders in order of first appearance, maps to `USER_A`, `USER_B`, ...; replaces Indian mobile numbers (`(\+91[\s-]?)?[6-9]\d{9}`) with `[PHONE]`
+- Normalisation: lowercase, strip punctuation (preserving apostrophes and intra-word hyphens), collapse multiple spaces
+- Outputs `data/processed/cleaned_data.txt` (one sentence per line) and `report/cleaning_report.txt`
+- Added `emoji` to `requirements.txt`; added `data/processed/` to `.gitignore`
+
+**Corpus stats (full 298-file run):**
+- Total messages parsed: 325,478
+- After filtering: 296,903 (91.2% kept)
+- Filtered breakdown: 25,178 too short | 2,948 emoji-only | 449 URL-only | 0 system
+- Unique senders: 14,853
+- Output size: 373 MB, 296,903 lines
+
+**Key files:**
+- `scripts/clean_data.py`
+- `report/cleaning_report.txt`
+- `.gitignore` (updated — excludes `data/processed/`)
+- `requirements.txt` (updated — added `emoji`)
+
+---
+
 ### Task 1.5 — Git Initialization & History Setup
 **What was done:**
 - Initialized git repository (`git init`)

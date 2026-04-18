@@ -164,7 +164,29 @@ Key spotlight observations:
 
 ---
 
-## Week 3 — Fine-Tuning Preparation
+## Week 3 — Fine-Tuning
+
+### Task 3.2 — LoRA Fine-Tune GPT-2
+**What was done:**
+- Wrote `scripts/finetune_gpt2_lora.py` with argparse CLI (`--dataset`, `--output`, `--epochs`, `--rank`, `--batch_size`, `--lr`)
+- MPS-first device detection: MPS → CUDA → CPU, with `use_mps_device=True` and `no_cuda=True` passed to `TrainingArguments` for Apple Silicon compatibility
+- LoRA config: `r=8`, `lora_alpha=16`, `target_modules=["c_attn"]`, `lora_dropout=0.1` → 294,912 trainable params (0.24% of 124M)
+- Fixed a `transformers 4.57` incompatibility: `DataCollatorForLanguageModeling` fails when the dataset already stores a variable-length `labels` column (calls `tokenizer.pad()` on it). Replaced with a custom `CLMCollator` that strips pre-stored labels, pads `input_ids`/`attention_mask`, then recreates `labels` with padding positions masked to -100
+- Fixed `evaluation_strategy` → `eval_strategy` rename in `TrainingArguments` (transformers ≥4.50)
+- `PerplexityCallback`: prints `exp(eval_loss)` after each epoch; records `eval_perplexity` in trainer_state.json
+- Post-training evaluation: loads fresh pretrained GPT-2 (no LoRA) and the saved LoRA adapter separately, runs all 15 Week-1 Telugu sentences, saves `report/finetune_comparison.csv`
+- `extract_perplexity_curve()`: parses `trainer_state.json` log_history → `report/perplexity_curve.csv`
+- MPS troubleshooting block documented in script header (OOM → reduce batch/rank; op errors → fall back to CPU)
+- Training: 5 epochs, lr=2e-4 cosine, warmup=100 steps, `load_best_model_at_end=True`
+- Model saved to `models/gpt2_lora_finetuned/` (adapter weights only — ~1.2MB)
+
+**Key files:**
+- `scripts/finetune_gpt2_lora.py`
+- `models/gpt2_lora_finetuned/` (adapter_model.safetensors + adapter_config.json)
+- `report/finetune_comparison.csv`
+- `report/perplexity_curve.csv`
+
+---
 
 ### Task 3.1 — Prepare CLM Training Dataset
 **What was done:**

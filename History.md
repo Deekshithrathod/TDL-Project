@@ -181,8 +181,13 @@ Key spotlight observations:
 - Model saved to `models/gpt2_lora_finetuned/` (adapter weights only — ~1.2MB)
 
 - Local MPS training killed after ~23 min at 3% (ETA ~55 hours) — shifted to Colab T4
-- Created `notebooks/colab_lora_finetune.ipynb`: mounts Drive, clones repo, installs deps, runs `prepare_dataset.py` + `finetune_gpt2_lora.py` on T4 (batch=16, fp16=True), saves model + CSVs back to Drive
+- Created `notebooks/colab_lora_finetune.ipynb`: mounts Drive, clones repo, installs deps, runs `prepare_dataset.py` + `finetune_gpt2_lora.py` on T4, saves model + CSVs back to Drive
 - `fp16` auto-enabled on CUDA (T4), disabled on MPS/CPU
+- **Colab timing fix (Task 3.2 follow-up):** Original Colab run at `batch_size=16` on full 237k training set was taking 5-8 hours (T4 real throughput ~10-15 it/s → 74k steps). Fixed by:
+  - Added `--max_train_samples` flag to `finetune_gpt2_lora.py` to cap dataset size
+  - Added `dataloader_num_workers=4` and `dataloader_pin_memory` to `TrainingArguments`
+  - Updated Colab notebook cell to `--batch_size 64 --max_train_samples 50000`
+  - Expected training time with fixes: **~20 minutes** on T4 (50k samples → 3,906 steps/epoch at batch=64)
 
 **Key files:**
 - `scripts/finetune_gpt2_lora.py`

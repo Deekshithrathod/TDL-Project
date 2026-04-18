@@ -201,13 +201,18 @@ def main():
     parser = argparse.ArgumentParser(
         description="LoRA fine-tune GPT-2 on cleaned Romanized Telugu corpus."
     )
-    parser.add_argument("--dataset",    default="data/clm_dataset_gpt2")
-    parser.add_argument("--output",     default="models/gpt2_lora_finetuned")
-    parser.add_argument("--epochs",     type=int,   default=5)
-    parser.add_argument("--rank",       type=int,   default=8)
-    parser.add_argument("--batch_size", type=int,   default=8)
-    parser.add_argument("--lr",         type=float, default=2e-4)
-    parser.add_argument("--report_dir", default="report")
+    parser.add_argument("--dataset",           default="data/clm_dataset_gpt2")
+    parser.add_argument("--output",            default="models/gpt2_lora_finetuned")
+    parser.add_argument("--epochs",            type=int,   default=5)
+    parser.add_argument("--rank",              type=int,   default=8)
+    parser.add_argument("--batch_size",        type=int,   default=8)
+    parser.add_argument("--lr",                type=float, default=2e-4)
+    parser.add_argument("--report_dir",        default="report")
+    parser.add_argument(
+        "--max_train_samples", type=int, default=None,
+        help="Cap training set size (e.g. 50000). "
+             "Full 237k set takes ~5-8h on T4; 50k takes ~20 min.",
+    )
     args = parser.parse_args()
 
     # ------------------------------------------------------------------
@@ -236,9 +241,18 @@ def main():
     tokenizer.pad_token = tokenizer.eos_token
 
     dataset = load_from_disk(str(dataset_path))
-    print(f"  Train: {len(dataset['train']):,}  "
-          f"Val: {len(dataset['validation']):,}  "
-          f"Test: {len(dataset['test']):,}")
+
+    # Optionally cap training set for faster iteration
+    train_ds = dataset["train"]
+    if args.max_train_samples and args.max_train_samples < len(train_ds):
+        train_ds = train_ds.select(range(args.max_train_samples))
+        print(f"  Train (capped): {len(train_ds):,}  "
+              f"Val: {len(dataset['validation']):,}  "
+              f"Test: {len(dataset['test']):,}")
+    else:
+        print(f"  Train: {len(train_ds):,}  "
+              f"Val: {len(dataset['validation']):,}  "
+              f"Test: {len(dataset['test']):,}")
 
     # ------------------------------------------------------------------
     # Base model → LoRA
@@ -279,18 +293,25 @@ def main():
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss",
         logging_steps=50,
-        fp16=torch.cuda.is_available(),   # True on CUDA (T4); False on MPS/CPU
+        fp16=torch.cuda.is_available(),     # True on CUDA (T4); False on MPS/CPU
         bf16=False,
+        dataloader_num_workers=4,           # parallel data loading
+        dataloader_pin_memory=torch.cuda.is_available(),
         seed=42,
         report_to="none",
     )
 
     collator = CLMCollator(tokenizer=tokenizer)
 
+    # Print expected step count so user knows what to expect
+    steps_per_epoch = -(-len(train_ds) // args.batch_size)
+    print(f"\n  Steps/epoch: {steps_per_epoch:,}  |  "
+          f"Total steps: {steps_per_epoch * args.epochs:,}")
+
     trainer = Trainer(
         model=model,
         args=training_args,
-        train_dataset=dataset["train"],
+        train_dataset=train_ds,
         eval_dataset=dataset["validation"],
         data_collator=collator,
         callbacks=[PerplexityCallback()],

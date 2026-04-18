@@ -26,7 +26,7 @@ models/
 *.pt
 *.ckpt
 
-# Tokenizer artifacts (generated, not source)
+# Tokenizer artifacts — track subdirectory files but ignore loose root-level ones
 tokenizers/*.json
 tokenizers/*.model
 

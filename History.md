@@ -71,7 +71,7 @@ Chronological log of completed tasks for the Romanized Telugu Language Model pro
 
 ---
 
-## Week 2 — Data Pipeline
+## Week 2 — Data Pipeline & Tokenizer Training
 
 ### Task 2.1 — WhatsApp Data Cleaning Pipeline
 **What was done:**
@@ -97,6 +97,32 @@ Chronological log of completed tasks for the Romanized Telugu Language Model pro
 - `report/cleaning_report.txt`
 - `.gitignore` (updated — excludes `data/processed/`)
 - `requirements.txt` (updated — added `emoji`)
+
+---
+
+### Task 2.2 — Train Custom BPE Tokenizers
+**What was done:**
+- Wrote `scripts/train_tokenizer.py` with argparse CLI (`--input`, `--outdir`)
+- Loads NLTK `words` corpus (234k words) at startup; auto-downloads if missing
+- English-ratio filter: keeps sentences where <70% of words appear in the NLTK English dictionary — identifies Telugu-dominated sentences for the second tokenizer
+- Trains `ByteLevelBPETokenizer` (vocab_size=12000, min_frequency=2, 4 special tokens) on two corpora:
+  - **tokenizer_codemixed**: full 296,903-sentence corpus
+  - **tokenizer_romanized_only**: 274,035-sentence Telugu-dominated subset (92.3%)
+- Writes filtered sentences to a `tempfile`, trains, then deletes temp file
+- Reload check: reloads both tokenizers from disk via `from_file()` and asserts token output matches pre-save
+- Verification block: prints token splits for 5 test sentences across both tokenizers
+- Added `nltk` to `requirements.txt`; updated `.gitignore` comment
+
+**Training results:**
+- Both tokenizers reached full 12,000 vocab target
+- Key improvement over GPT-2 baseline: `"meeru ela unnaru"` → 3 tokens (vs 6 with GPT-2); `"nenu ikkadiki vastunnanu"` → 5 tokens (vs 10 with GPT-2)
+- `"naku Telugu vastundi"` still splits `Telugu` due to capital T not seen in lowercased training data — expected
+
+**Key files:**
+- `scripts/train_tokenizer.py`
+- `tokenizers/tokenizer_codemixed/vocab.json` + `merges.txt`
+- `tokenizers/tokenizer_romanized_only/vocab.json` + `merges.txt`
+- `requirements.txt` (updated — added `nltk`)
 
 ---
 

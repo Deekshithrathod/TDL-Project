@@ -12,3 +12,4 @@ tqdm
 jupyter
 ipykernel
 emoji
+nltk

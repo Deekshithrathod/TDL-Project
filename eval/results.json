@@ -1,0 +1,38 @@
+{
+  "gpt2": {
+    "label": "GPT-2 pretrained",
+    "ppl": 362.9,
+    "top1": 0.02,
+    "top3": 0.05,
+    "top5": 0.06,
+    "n_topk": 100,
+    "n_ppl": 300
+  },
+  "mgpt": {
+    "label": "mGPT pretrained",
+    "ppl": 213.26,
+    "top1": 0.15,
+    "top3": 0.22,
+    "top5": 0.25,
+    "n_topk": 100,
+    "n_ppl": 300
+  },
+  "gpt2-finetuned-orig": {
+    "label": "GPT-2 fine-tuned (orig tok)",
+    "ppl": 92.28,
+    "top1": 0.04,
+    "top3": 0.08,
+    "top5": 0.13,
+    "n_topk": 100,
+    "n_ppl": 300
+  },
+  "gpt2-finetuned-custom": {
+    "label": "GPT-2 fine-tuned (custom tok)",
+    "ppl": 3624.79,
+    "top1": 0.01,
+    "top3": 0.01,
+    "top5": 0.01,
+    "n_topk": 100,
+    "n_ppl": 300
+  }
+}

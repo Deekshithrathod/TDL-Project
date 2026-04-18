@@ -245,6 +245,32 @@ Key spotlight observations:
 
 ---
 
+### Task 3.3 — LoRA Fine-Tune GPT-2 with Custom BPE Tokenizer
+**What was done:**
+- Wrote `scripts/finetune_gpt2_custom_tok.py` — mirrors `finetune_gpt2_lora.py` but swaps in the custom 12k BPE tokenizer
+- Key differences from Task 3.2:
+  - Loads `tokenizers/tokenizer_codemixed` (fertility 1.63, identical to romanized_only) wrapped as `PreTrainedTokenizerFast`
+  - Re-tokenizes `cleaned_data.txt` from scratch with manual truncation (tokenizers 0.22.x `enable_truncation` bug workaround)
+  - Resizes GPT-2 embedding layer 50,257 → 12,000; new rows randomly initialised
+  - Same LoRA config: r=8, lora_alpha=16, target_modules=["c_attn"]
+  - Same training fixes: `CLMCollator`, `eval_strategy`, no MPS flags, fp16 auto-enabled on CUDA
+- Produces **three-way comparison** across: pretrained GPT-2, finetuned orig-tok, finetuned custom-tok
+  - Saves `report/custom_tok_comparison.csv` and `report/perplexity_curve_custom_tok.csv`
+  - PPL values noted as non-comparable across tokenizers (custom tok has lower fertility → fewer tokens → mechanically lower per-token loss)
+- Created `notebooks/colab_custom_tok_finetune.ipynb` for T4 Colab run:
+  - Extra cell copies previous `gpt2_lora_finetuned` from Drive for 3-way comparison
+  - Runs with `--batch_size 64 --max_train_samples 50000` (~20 min expected on T4)
+- **Mac M3 vs Colab:** M3 MPS estimated ~110 min; Colab T4 estimated ~20 min. Colab chosen.
+
+**Key files:**
+- `scripts/finetune_gpt2_custom_tok.py`
+- `notebooks/colab_custom_tok_finetune.ipynb`
+- `models/gpt2_lora_custom_tok/` (populated after Colab run)
+- `report/custom_tok_comparison.csv` (populated after Colab run)
+- `report/perplexity_curve_custom_tok.csv` (populated after Colab run)
+
+---
+
 ### Task 1.5 — Git Initialization & History Setup
 **What was done:**
 - Initialized git repository (`git init`)

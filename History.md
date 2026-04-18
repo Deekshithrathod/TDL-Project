@@ -289,6 +289,72 @@ Val PPL is much higher than the orig-tok run (86.2) — expected. Two reasons:
 
 ---
 
+---
+
+## Week 4 — Evaluation Pipeline & Error Analysis
+
+### Task 4.1 — Cross-Model Evaluation Pipeline
+**What was done:**
+- Built a reproducible evaluation pipeline comparing all four model variants on a held-out test split
+- Constructed `eval/eval_set.json`: 100 prefix/next_word pairs sampled from the Week-3 test split (80/10/10, seed=42 from `cleaned_data.txt`)
+- Wrote `eval/perplexity.py`: corpus-level PPL (total NLL / total tokens) with `--model` flag; supports all four variants
+- Wrote `eval/topk_accuracy.py`: top-1/3/5 next-word accuracy with subword handling (first-token match for multi-token words)
+- Wrote `eval/run_eval.py`: orchestrates both metrics across all models, writes `eval/results.json`, prints formatted table
+- Diagnosed and fixed a PEFT loading issue: `merge_and_unload()` does not restore `wte`/`lm_head` weights saved in the adapter file; added `_restore_custom_embeddings()` to apply them manually
+
+**Results:**
+
+| Model                        | Test PPL | Top-1 | Top-3 | Top-5 |
+|------------------------------|----------|-------|-------|-------|
+| GPT-2 pretrained             | 362.90   | 2.0%  | 5.0%  | 6.0%  |
+| mGPT pretrained              | 213.26   | 15.0% | 22.0% | 25.0% |
+| GPT-2 fine-tuned (orig tok)  | 92.28    | 4.0%  | 8.0%  | 13.0% |
+| GPT-2 fine-tuned (custom tok)| 3624.79* | 1.0%  | 1.0%  | 1.0%  |
+
+*Custom tok PPL uses a 12k-vocab tokenizer and is not directly comparable to the other three. High PPL reflects embedding misalignment after resize — the resized embeddings never converged in 4 epochs.
+
+**Key files:**
+- `eval/eval_set.json`
+- `eval/perplexity.py`
+- `eval/topk_accuracy.py`
+- `eval/run_eval.py`
+- `eval/results.json`
+
+---
+
+### Task 4.2 — Error Analysis
+**What was done:**
+- Ran all four models over all 100 eval examples and recorded top-5 predictions and per-example PPL
+- Selected 30 failure cases (≥3 of 4 models fail top-1), sorted by severity
+- Manually categorized each failure into error buckets
+- Wrote a full written analysis with 7 highlighted cases and a summary diagnosis
+
+**Error category distribution (30 failures):**
+
+| Category | Count |
+|---|---|
+| Data sparsity | 26 |
+| Tokenization failure (subword split) | 19 |
+| Wrong but plausible | 6 |
+| English intrusion | 5 |
+| Extreme code-mixing | 3 |
+| Hindi intrusion | 3 |
+| Custom tok mode collapse | 100* (systematic) |
+
+**Key findings:**
+- mGPT is the correct baseline for code-mixed South Asian text — multilingual pretraining covers Hindi, informal register, and transliteration that GPT-2 fine-tuning cannot replicate
+- GPT-2 fine-tuned (orig tok) learned the Telugu consonant-initial subword distribution but rarely resolves full words; most "successes" are first-consonant matches
+- Custom tok model collapses to "mariyu" (55/100 predictions) due to embedding misalignment from the vocabulary resize; LoRA-only updates cannot fix the embedding table
+- Code-switching at phrase boundaries defeats all four models with near-certainty
+
+**Key files:**
+- `analysis/extract_failures.py`
+- `analysis/predictions.json`
+- `analysis/failures.json`
+- `analysis/error_analysis.md`
+
+---
+
 ### Task 1.5 — Git Initialization & History Setup
 **What was done:**
 - Initialized git repository (`git init`)

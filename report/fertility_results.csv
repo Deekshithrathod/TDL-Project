@@ -1,0 +1,5 @@
+tokenizer,avg_fertility,continued_word_pct,sample_size
+gpt2,2.9905,83.27,1000
+mgpt,2.7148,85.2,1000
+codemixed,1.6327,84.96,1000
+romanized_only,1.6327,85.04,1000

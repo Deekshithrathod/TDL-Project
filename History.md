@@ -100,6 +100,44 @@ Chronological log of completed tasks for the Romanized Telugu Language Model pro
 
 ---
 
+### Task 2.3 — Tokenizer Fertility Analysis
+**What was done:**
+- Wrote `scripts/fertility_analysis.py` with argparse CLI (`--input`, `--sample`, `--codemixed-dir`, `--romanized-dir`, `--outdir`)
+- Loads all 4 tokenizers: GPT-2 (HF), mGPT (HF, graceful skip on failure), codemixed BPE, romanized_only BPE
+- Samples 1000 sentences from cleaned corpus at seed=42 for reproducible comparison
+- Computes two metrics per tokenizer over the sample:
+  - **Fertility**: avg tokens-per-word (sentence token count ÷ word count)
+  - **Continued-word %**: fraction of words (encoded independently) that split into >1 token
+- Unified `compute_metrics()` function handles both HF (`add_special_tokens=False`) and BPE (`.encode().ids`) APIs
+- Builds 25-word spotlight table showing exact token splits per tokenizer
+- Saves `report/fertility_results.csv`, `report/spotlight_splits.csv`, `report/fertility_report.txt` (pretty-printed with `tabulate`)
+- Added `tabulate` to `requirements.txt`
+
+**Results (1000 sentences, seed=42):**
+
+| Tokenizer      | Avg Fertility | CWP (%) |
+|----------------|--------------|---------|
+| gpt2           | 2.990        | 83.3%   |
+| mgpt           | 2.715        | 85.2%   |
+| codemixed      | **1.633**    | 85.0%   |
+| romanized_only | **1.633**    | 85.0%   |
+
+Key spotlight observations:
+- `unnaru` → 1 token (custom) vs 2 (GPT-2/mGPT)
+- `ledu`, `meeru`, `nenu` → 1 token each (custom) vs 2–3 (baselines)
+- `cheppukovadam` → 2 tokens (custom) vs 6 (GPT-2)
+- `okkaసారి` → mGPT correctly clusters Telugu Unicode bytes into 4 tokens; GPT-2 and custom BPE byte-explode into 14/13 pieces respectively
+- codemixed and romanized_only produce near-identical splits — the Telugu filter had little effect at 12k vocab with this corpus size
+
+**Key files:**
+- `scripts/fertility_analysis.py`
+- `report/fertility_results.csv`
+- `report/spotlight_splits.csv`
+- `report/fertility_report.txt`
+- `requirements.txt` (updated — added `tabulate`)
+
+---
+
 ### Task 2.2 — Train Custom BPE Tokenizers
 **What was done:**
 - Wrote `scripts/train_tokenizer.py` with argparse CLI (`--input`, `--outdir`)

@@ -1,0 +1,59 @@
+=======================================================================
+  Tokenizer Fertility & Continued-Word Analysis
+  Sample: 1,000 sentences  |  seed=42
+=======================================================================
+
+### Fertility & CWP Summary
+
+| tokenizer      |   avg_fertility |   continued_word_pct |   sample_size |
+|----------------|-----------------|----------------------|---------------|
+| gpt2           |           2.990 |               83.270 |          1000 |
+| mgpt           |           2.715 |               85.200 |          1000 |
+| codemixed      |           1.633 |               84.960 |          1000 |
+| romanized_only |           1.633 |               85.040 |          1000 |
+
+Columns:
+  avg_fertility      — tokens per word (lower = more efficient)
+  continued_word_pct — % of words split into >1 token (lower = better)
+
+-----------------------------------------------------------------------
+
+### Word-Level Spotlight  (25 Romanized Telugu words)
+
+| word           | gpt2                                          | mgpt                                  | codemixed                                     | romanized_only                                |
+|----------------|-----------------------------------------------|---------------------------------------|-----------------------------------------------|-----------------------------------------------|
+| vastunnanu     | ['v', 'ast', 'un', 'nan', 'u']                | ['v', 'ast', 'unn', 'anu']            | ['v', 'ast', 'unnanu']                        | ['v', 'ast', 'unnanu']                        |
+| cheppadu       | ['che', 'pp', 'ad', 'u']                      | ['ch', 'epp', 'adu']                  | ['chepp', 'adu']                              | ['chepp', 'adu']                              |
+| andukey        | ['and', 'u', 'key']                           | ['and', 'uk', 'ey']                   | ['and', 'uk', 'ey']                           | ['and', 'uk', 'ey']                           |
+| ikkadiki       | ['ikk', 'ad', 'iki']                          | ['ikk', 'ad', 'iki']                  | ['ikk', 'adiki']                              | ['ikk', 'adiki']                              |
+| unnaru         | ['unn', 'aru']                                | ['unn', 'aru']                        | ['unnaru']                                    | ['unnaru']                                    |
+| chestunnanu    | ['chest', 'un', 'nan', 'u']                   | ['ch', 'est', 'unn', 'anu']           | ['ch', 'est', 'unnanu']                       | ['ch', 'est', 'unnanu']                       |
+| ledu           | ['led', 'u']                                  | ['led', 'u']                          | ['ledu']                                      | ['ledu']                                      |
+| meeru          | ['me', 'er', 'u']                             | ['meer', 'u']                         | ['meeru']                                     | ['meeru']                                     |
+| nenu           | ['nen', 'u']                                  | ['nen', 'u']                          | ['nenu']                                      | ['nenu']                                      |
+| kavali         | ['k', 'av', 'ali']                            | ['k', 'av', 'ali']                    | ['k', 'avali']                                | ['k', 'avali']                                |
+| chudandi       | ['ch', 'ud', 'andi']                          | ['ch', 'ud', 'andi']                  | ['ch', 'ud', 'andi']                          | ['ch', 'ud', 'andi']                          |
+| pampinchu      | ['p', 'amp', 'inch', 'u']                     | ['p', 'amp', 'inch', 'u']             | ['p', 'amp', 'inchu']                         | ['p', 'amp', 'inchu']                         |
+| thelusukuntanu | ['thel', 'us', 'uk', 'unt', 'anu']            | ['thel', 'us', 'uk', 'unt', 'anu']    | ['th', 'el', 'us', 'ukuntanu']                | ['th', 'el', 'us', 'ukuntanu']                |
+| marchipoyanu   | ['m', 'arch', 'ip', 'oy', 'anu']              | ['mar', 'ch', 'ip', 'oy', 'anu']      | ['m', 'arch', 'ipoy', 'anu']                  | ['m', 'arch', 'ipoy', 'anu']                  |
+| cheppukovadam  | ['che', 'pp', 'uk', 'ov', 'ad', 'am']         | ['ch', 'epp', 'uk', 'ov', 'ad', 'am'] | ['chepp', 'ukovadam']                         | ['chepp', 'ukovadam']                         |
+| okkaసారి         | ['ok', 'ka', 'à', '°', '¸', 'à', '°', '¾', 'à | ['okka', 'à°¸', 'à°¾', 'à°°', 'à°¿']  | ['okka', 'à', '°', '¸', 'à', '°', '¾', 'à', ' | ['okka', 'à', '°', '¸', 'à', '°', '¾', 'à', ' |
+| bayataki       | ['bay', 'at', 'aki']                          | ['bay', 'at', 'aki']                  | ['b', 'ayat', 'aki']                          | ['b', 'ayat', 'aki']                          |
+| pampinchanu    | ['p', 'amp', 'in', 'chan', 'u']               | ['p', 'amp', 'inch', 'anu']           | ['p', 'amp', 'inchanu']                       | ['p', 'amp', 'inchanu']                       |
+| tirigi         | ['t', 'ir', 'igi']                            | ['t', 'ir', 'igi']                    | ['t', 'ir', 'igi']                            | ['t', 'ir', 'igi']                            |
+| vellipoindi    | ['vell', 'ip', 'o', 'ind', 'i']               | ['v', 'ell', 'ipo', 'indi']           | ['v', 'ell', 'ipoindi']                       | ['v', 'ell', 'ipoindi']                       |
+| chestam        | ['chest', 'am']                               | ['ch', 'est', 'am']                   | ['ch', 'est', 'am']                           | ['ch', 'est', 'am']                           |
+| undadu         | ['und', 'ad', 'u']                            | ['und', 'adu']                        | ['und', 'adu']                                | ['und', 'adu']                                |
+| kashtanga      | ['k', 'ash', 't', 'anga']                     | ['k', 'ash', 't', 'anga']             | ['k', 'asht', 'anga']                         | ['k', 'asht', 'anga']                         |
+| nerchukunna    | ['ner', 'chuk', 'un', 'na']                   | ['ner', 'ch', 'uk', 'un', 'na']       | ['ner', 'ch', 'ukunna']                       | ['ner', 'ch', 'ukunna']                       |
+| matladataniki  | ['mat', 'lad', 'atan', 'iki']                 | ['mat', 'lad', 'atan', 'iki']         | ['m', 'at', 'lad', 'ataniki']                 | ['m', 'at', 'lad', 'ataniki']                 |
+
+-----------------------------------------------------------------------
+
+## Analysis (fill in after reviewing results)
+
+# TODO: Which tokenizer has the lowest fertility on Telugu words?
+# TODO: Does romanized_only outperform codemixed on Telugu-heavy words?
+# TODO: Any surprising splits in the spotlight words?
+# TODO: How does okkaసారి split differently across byte-level vs mGPT?
+# TODO: Which tokenizer would you recommend as the base for fine-tuning?

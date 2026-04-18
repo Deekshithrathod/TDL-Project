@@ -279,7 +279,7 @@ def main():
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss",
         logging_steps=50,
-        fp16=False,   # MPS does not support fp16; CUDA users can set True
+        fp16=torch.cuda.is_available(),   # True on CUDA (T4); False on MPS/CPU
         bf16=False,
         seed=42,
         report_to="none",

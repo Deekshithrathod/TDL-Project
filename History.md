@@ -180,11 +180,16 @@ Key spotlight observations:
 - Training: 5 epochs, lr=2e-4 cosine, warmup=100 steps, `load_best_model_at_end=True`
 - Model saved to `models/gpt2_lora_finetuned/` (adapter weights only — ~1.2MB)
 
+- Local MPS training killed after ~23 min at 3% (ETA ~55 hours) — shifted to Colab T4
+- Created `notebooks/colab_lora_finetune.ipynb`: mounts Drive, clones repo, installs deps, runs `prepare_dataset.py` + `finetune_gpt2_lora.py` on T4 (batch=16, fp16=True), saves model + CSVs back to Drive
+- `fp16` auto-enabled on CUDA (T4), disabled on MPS/CPU
+
 **Key files:**
 - `scripts/finetune_gpt2_lora.py`
-- `models/gpt2_lora_finetuned/` (adapter_model.safetensors + adapter_config.json)
-- `report/finetune_comparison.csv`
-- `report/perplexity_curve.csv`
+- `notebooks/colab_lora_finetune.ipynb`
+- `models/gpt2_lora_finetuned/` (populated after Colab run)
+- `report/finetune_comparison.csv` (populated after Colab run)
+- `report/perplexity_curve.csv` (populated after Colab run)
 
 ---
 

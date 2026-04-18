@@ -262,12 +262,30 @@ Key spotlight observations:
   - Runs with `--batch_size 64 --max_train_samples 50000` (~20 min expected on T4)
 - **Mac M3 vs Colab:** M3 MPS estimated ~110 min; Colab T4 estimated ~20 min. Colab chosen.
 
+**Training results (Colab T4, 50k samples, 4 epochs):**
+
+| Epoch | Train Loss | Val Loss | Val PPL |
+|-------|-----------|----------|---------|
+| 1     | 8.1524    | 8.1060   | 3314.19 |
+| 2     | 8.1603    | 8.0878   | 3254.37 |
+| 3     | 8.1280    | 8.0754   | 3214.55 |
+| 4     | 8.1081    | 8.0683   | **3191.65** |
+
+Val PPL is much higher than the orig-tok run (86.2) — expected. Two reasons:
+1. Embedding layer was randomly initialised (12k vocab, no pretrained signal)
+2. PPL is not directly comparable across tokenizers (custom tok = fewer tokens per sentence = different loss scale)
+
+**Three-way comparison highlights:**
+- Custom-tok top-5 predictions now include actual Telugu words: `mariyu`, `telugu`, `yokka`, `ala`, `alu` — the model has learned the domain vocabulary
+- Orig-tok finetuned still wins on raw PPL (same tokenizer as pretrained baseline, direct comparison valid)
+- Custom-tok adapter is 74MB (vs 1.2MB for orig-tok) — expected: resizing embeddings 50,257→12,000 saves the full new embedding matrix as trainable params alongside the LoRA weights
+
 **Key files:**
 - `scripts/finetune_gpt2_custom_tok.py`
 - `notebooks/colab_custom_tok_finetune.ipynb`
-- `models/gpt2_lora_custom_tok/` (populated after Colab run)
-- `report/custom_tok_comparison.csv` (populated after Colab run)
-- `report/perplexity_curve_custom_tok.csv` (populated after Colab run)
+- `models/gpt2_lora_custom_tok/` — adapter + resized embeddings (~74MB, gitignored)
+- `report/custom_tok_comparison.csv`
+- `report/perplexity_curve_custom_tok.csv`
 
 ---
 

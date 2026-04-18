@@ -1,0 +1,64 @@
+Dataset preview — clm_dataset_codemixed
+Tokenizer: tokenizers/tokenizer_codemixed | max_length: 128
+======================================================================
+
+[00] (128 tokens)
+ulava charu biryani movie review cinedunia home reviews ulava charu biryani movie review ulava charu biryani movie review cine dunia rating 2 25 5 nirmata vallabha natinatulu prakash raj sneha tejas samyukta enno vibhinna patralato telugu tamil kannada malayala hindi prekshakulanu meppinchina vilakshana natudu prakash raj darshakudiga chesina dvitiya prayatname 'ulavacharu biryani' okesari telugu tamil kannada bhashallo terakekkinchina e cinema malayalam hit ayina 'salt and pepper'k remake prakash raj sneha pradhana patrallo tejas samyukta hero heroines ga parichayamaina e sinimaki mast
+
+[01] (128 tokens)
+timothy timothy sajeeva vahini sajeeva vahini timothy timothy devuni ghanaparachuvadu timothy found in 12 books or 23 verses 16 1 paul derbekunu luntrakunu vachchenu akkada timothy anu oka sishyudundenu athadu vishwasinchina yoke yudurali kumarudu atani tandri greece desasthudu 19 22 appudu tanaku paricharyacheyu varilo timothy erastu anu vaari niddarini macedoniac pampi tanu asialo kontakalamu nilichiyundenu 20 4 mariyu purru kumarudunu beriah patt
+
+[02] (128 tokens)
+sandeep myacho luchpi lavanya comment lavanya tripati hot comments on sandeep kishan sixpack body home top stories sandeep myacho luchpi lavanya comment september 19 2020 11 54 am ist lockdown time nunchi think positive antu social medialo post pettadam modalupetti positivity penche prayathnam chesadu young hero sandeep kishan prastutam 'ae1 express' movie chitram natistunna sandeep kishan shocking lukto surprise ichchadu pratyekanga e movie kosam trainer sahayanto six pack lukloki maripoyina sandeep kishan tvaralo tana panthanu marchukobotunnattu telustondi mass masala action entertainer chitralaku tanu siddamane
+
+[03] (128 tokens)
+drone rakshana dalam eenadu ippati varaku manam aneka rakala dronel gurinchi vinnam vastuvulanu shipping chese dronel vipathula samayamlo sahayapade dronel geographic mapping wildlife monitoring dronel ila aneka rakaluga vatini viniyogistunnaru ippudu kothaga ai technology tayaru chesina mini dronel vastunnay chuddaniki chinna pillalu adukune vastuvula unnaa avi cheyagalige panulu matram anni inni kadu asalenti veeti pratyekata antara ivo rakshana sainyamla ranarangamloki digutay sainikulaku toduga nilichenduku siddam avutunnayi guri petty firing modalettayante satruvulu antham avvalsinde 'ai
+
+[04] (11 tokens)
+uttejakaramaina kotha rasam kalayika kosam recipeni srishtinchandi
+
+[05] (99 tokens)
+manasika aarogyanni meruguparachadaniki vyayam dinacharyanu sthapinchadam chala prayojanakaranga untundi kramam thappakunda vyayamam ottidi andolan mariyu nirash lakshmanalanu taggistundani nirupinchabadindi idi sahaja mood elevators ayina endorphines utpattini penchutundi mariyu manchi nidranu protsahisthundi inka vyayamam medadu-utpanna neurotrophic factor bdnf nu penchutundi idi newran perugudala mariyu nirvahanaku maddatu istundi abhyasam mariyu jnapakshakti rendentiny meruguparustundi vyayam dinacharyanu nirvahinchadam e sanukula prabhavalanu kalakramena konasaginchadaniki anumatistundi motham manasika sreyassunu protsahisthundi
+
+[06] (44 tokens)
+talam vesina gadilo badhituraliki balavantanga pravesinchina anavallu kanipinchaledu aa gadilo pekata adutunna table khali wine bottle rendu glasulu unnaayi oka glasupi lip stick gurthulu unnaayi
+
+[07] (128 tokens)
+pettubadulato randi telangana rashtra samithi rashrataniki bhariga pettubadulu akarshinchatame lakshyanga americas paryatistunna itisach mantri k tarakaramarao shukravaaram silikanvyalilo vividha rangallo prapanchamlone perennikaganna sansthalato samavesamayyaru elektronicrngamlo prapanchavyaaptanga vistarinchina ipled materials prapanchanlone atipedda venture capital sanstha new enterprise sansthala yajamanyalato charchalu jariparu rashtram pettubadulu pettalani corr ennarailato ishtagoshtilo palgonna mantri ficki nirvahinchina pettubadidarula samavesamlo palgoni rashtram pettubadulakugala avakasalanu vivarincharu -america companies itisach mantri ktar pilupu -new enterprise associates ip
+
+[08] (128 tokens)
+nirnayam sanchika telugu sahitya vedika home kathalu nirnayam on january 01 2021 rachana thota sambashivarao ithara rachanalu on january 01 2021 adi 1990 dasakamlo prathamartham sattenapalli prabhutva junior kalasala principalga panichestunna sundaram mastarante a oorlo teliyani varundarante atisayokti kaadu udyoga nirvahanalo kramshikshanaku nibaddataku ayana pettindi peru paigah sundaram mashtari aadhvaryam aa kalasala gata mudellanundi intermediatelo nutiki nurushatam uttirnatha sadhisthu rashtrasthailone o pratyekamaina gurtimpu pondindi ayana kutumba nepathyam gurinchi cheppalante munduga ayana satimani sitaratnam peddaga
+
+[09] (10 tokens)
+baruvu 70 kilolu ethu 1 75 mi
+
+[10] (15 tokens)
+april 16na prarambhamayye e prajektunu may 21 naatiki purti cheyalannaru
+
+[11] (11 tokens)
+vignana bhagaswamyanni samajam ela protsahisthundo vivarinchandi
+
+[12] (128 tokens)
+2016k kalisochche feng shui rangulto intini alankarinchandi webdunia telugu 2016k kalisochche feng shui rangulto intini alankarinchandi selvi last updated shanivaram 19 december 2015 17 36 ist 2016 kottha samvatsaram manche jargalanukuntunnara kotha sanvatsaram manaku anni subhalanu prasadinchalani ashistunnara aithe feng shui cheptunna konni rangulato intini alankarinchukondi intiki painting cheyakapoyina intlo upayoginche vastuvulni aa rangulo enchukondi antunnaru feng shui nipunulu 2016chandra feng shui prakaram anglamlo soft pink soft pink pael blue pale blue vanti rangulu
+
+[13] (128 tokens)
+tedepaku mla padaviki vamshi rajinama gannavaram mla vamsi resigns to telugu desam party eenadu amaravathi krishna jilla gannavaram mla vallabhaneni vamshi telugudesam partick rajinama chesaru tedepa prathamika sabhyatwaniki rajinama chestu party adhinetha chandrababuku lekha rasharu mla padaviki rajinama cheyadame kaaka rajakeeyala nunchi purtiga vaidolugutunnatlu lekhalo perkonnaru e sandarbhanga lekhalo palu amsalanu prastavincharu ''mee netritvamlo praja pratinidhiga panichesenduku avakasam ichchinanduku dhanyavaadaalu sasanasabhyudiga vijayavanthanga padavikalam purti chesi rendosari emmelyega ennikayyanu aithe naa anucharulu maddatudarulu sthanic vaikapa nayakulu kondaru prabhutva adhikarula vaikhari valla ibbandulu edurkontunnaru e vishayam na drishtiki
+
+[14] (128 tokens)
+janmadinavela nalugintalahela sep 02 2020 23 56 20 nyayanni kapade vakilga avataramettaru pavankalyan ayana kathanayakudiga sri venkateswara creations bay view projects patakalapai rupondutunna chitram 'wakilsab' bonikapur samarpanalo dilraju shirish nirmistunnaru sriramvenu darshakudu budhavaram motianpostern chitrabrindam vidudalachesindi indulo okavaipu mahatmagandhi photo maro vaipu ambedkar photo madhyalo nallakotuto pavankalyan kanipistunnaru o chetilo baseball stick maro chetilo criminal law pustakanto nilabadina ayana poster akattukuntondi nirmatalu maatlaadutu 'lay
+
+[15] (128 tokens)
+congresku chiru goodbyue cheppanunnara sun oct 20 2019 last updated 1 25 am ist updated october 17 2018 11 11 ist vuyyuru subhash october 17 2018 11 11 ist congresku chiru goodbyue cheppanunnara rajakeeyallo eppudu edaina jaragochu rashtram prabanjanam srustistadani seem avutadani samajic nyayam jarugutumdani bhavinchina samayamlo prajalloki dusuku vachchina prajarajyam party anathi kaalamlo kevalam oka ennikala vyavadhilone congreslo vilinam ayipovadam rashtra chantralo o pidakalaga migilipoyindi mega star chiranjeevi sthapinchina prajarajyam paristhithi ila ayindi ikaa ayana 2009 ennikala tarvata partiny nadipinchadam saadhyam kaka poyi poyi congresku sur
+
+[16] (122 tokens)
+journalist raghupai akrama case etheyali dgpk paluvuru pramukhula lekha eenadu hyderabad journalist raghupai polices pettina kesunu upasanharimpajeyalani paluvuru pramukhulu dgp mahendarreddini corr e meraku pramukha vidyavetta chukka ramaiah pro haragopal majhi mp konda visweswarreddy pro kodandaram pro visweswararao rama melkote senior journalists ramachandramurthy k srinivas akhileshwari paryavaranavetta pro purushottamreddilu guruvaram lekha rasharu dk basu versus pascimabengal kesulo 1996low suprencort ichchina margadarshakalaku viruddhanga e arrest jarigindannaru
+
+[17] (128 tokens)
+police valayanni chedinchukuni jbs chandra vellina sanjay drukpadam drukpadham bustand anta kaliyatirigina bjp telangana adhyaksha prayanikula ibbandulu telusukunna sanjay charges every kosam pencharantu bjp fire bjp rashtra adhyaksha bandi sanjay rtc charges pempunu nirasistu secunderabad loni jbs bus stand sandarshanaku adlukunenduku polices chesina prayatnalu bedici kottai ayana intinunchi bayataku vellakunda polices grihanirbandanni chedinchukoni autolo bus standlo pratyakshamavadam police yantraganni ascharyaparichindi bjp srenulu rtc charges pempunu nirasistu paluchotla andolanalu chepattaru rashtraprabhutwa prajavyatireka charyalanu nirasimcharu
+
+[18] (19 tokens)
+lstm handling the vanishing gradients ye kya hai ganda sa
+
+[19] (11 tokens)
+mytosis mariyu meosis madhya pradhana vyatyasanni vivarinchandi
+

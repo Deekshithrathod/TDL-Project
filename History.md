@@ -100,6 +100,39 @@ Chronological log of completed tasks for the Romanized Telugu Language Model pro
 
 ---
 
+## Week 3 — Fine-Tuning Preparation
+
+### Task 3.1 — Prepare CLM Training Dataset
+**What was done:**
+- Wrote `scripts/prepare_dataset.py` with argparse CLI (`--input`, `--output`, `--tokenizer`, `--max_length`)
+- `--tokenizer` accepts both HF model IDs (e.g. `gpt2`) and local BPE directories (e.g. `tokenizers/tokenizer_codemixed`) — detected by checking for `vocab.json` presence
+- Custom BPE directories are wrapped as `PreTrainedTokenizerFast` to get HF dataset API compatibility
+- Worked around a `tokenizers==0.22.2` / `transformers` version mismatch: `PreTrainedTokenizerFast` tries to call `enable_truncation(direction=...)` which 0.22.x doesn't support — fixed by calling without truncation args and slicing `input_ids[:max_length]` manually in the BPE tokenize function
+- Tokenizes for CLM: `labels = input_ids.copy()` (shift handled by `DataCollatorForLanguageModeling` at training time)
+- 80/10/10 split with `seed=42` for reproducibility
+- Verification block decodes 3 train examples and warns on high UNK rate
+- Stats block reports avg token length, max length, truncation rate; warns if >30%
+- Saves HuggingFace `DatasetDict` to disk via `save_to_disk()`
+- Writes `report/dataset_preview_{name}.txt` with first 20 decoded train examples
+- Added `data/clm_dataset_*/` to `.gitignore`
+
+**Results:**
+
+| Dataset | Tokenizer | Train | Val | Test | Truncation |
+|---|---|---|---|---|---|
+| `clm_dataset_gpt2` | GPT-2 | 237,522 | 29,690 | 29,691 | 56.1% ⚠ |
+| `clm_dataset_codemixed` | custom BPE | 237,522 | 29,690 | 29,691 | 45.4% ⚠ |
+
+56% truncation rate for GPT-2 vs 45% for custom BPE — consistent with custom tokenizer's lower fertility (1.63 vs 2.99 tokens/word). The high truncation rate is due to multi-sentence scraped blobs in the corpus; a pack_sequences strategy would recover that context.
+
+**Key files:**
+- `scripts/prepare_dataset.py`
+- `report/dataset_preview_clm_dataset_gpt2.txt`
+- `report/dataset_preview_clm_dataset_codemixed.txt`
+- `.gitignore` (updated — excludes `data/clm_dataset_*/`)
+
+---
+
 ### Task 2.3 — Tokenizer Fertility Analysis
 **What was done:**
 - Wrote `scripts/fertility_analysis.py` with argparse CLI (`--input`, `--sample`, `--codemixed-dir`, `--romanized-dir`, `--outdir`)

@@ -1,0 +1,2062 @@
+[
+  {
+    "idx": 12,
+    "prefix": "info edge",
+    "next_word": "pyq",
+    "predictions": {
+      "gpt2": {
+        "top1": "-",
+        "top5": [
+          "-",
+          ".",
+          "of",
+          "_",
+          ")"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 23444.79
+      },
+      "mgpt": {
+        "top1": ".",
+        "top5": [
+          ".",
+          "-",
+          "",
+          ",",
+          "of"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 5619.47
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "v",
+        "top5": [
+          "v",
+          "p",
+          "r",
+          "u",
+          "y"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 13687.71
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "e",
+          "am",
+          "ul",
+          "a"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 2395.21
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 13687.71,
+    "error_categories": [
+      "data_sparsity",
+      "tokenization_failure"
+    ]
+  },
+  {
+    "idx": 31,
+    "prefix": "aa inka i felt astronauts farting",
+    "next_word": "iss",
+    "predictions": {
+      "gpt2": {
+        "top1": "in",
+        "top5": [
+          "in",
+          "on",
+          "out",
+          "and",
+          "."
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 7886.19
+      },
+      "mgpt": {
+        "top1": "in",
+        "top5": [
+          "in",
+          ".",
+          ",",
+          "",
+          "i"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 2400.26
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "out",
+        "top5": [
+          "out",
+          "on",
+          "in",
+          "and",
+          "up"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 5601.17
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "e",
+          "telugu",
+          "am",
+          "a"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 4440.49
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 5601.17,
+    "error_categories": [
+      "extreme_code_mixing",
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 74,
+    "prefix": "was feeding amma",
+    "next_word": "lunch",
+    "predictions": {
+      "gpt2": {
+        "top1": ",",
+        "top5": [
+          ",",
+          "to",
+          ".",
+          "and",
+          "on"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 13832.8
+      },
+      "mgpt": {
+        "top1": ".",
+        "top5": [
+          ".",
+          "and",
+          ",",
+          "in",
+          "to"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 17820.91
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "k",
+        "top5": [
+          "k",
+          "n",
+          "a",
+          "b",
+          "v"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 3013.16
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "ing",
+          "er",
+          "u",
+          "b"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 6282.26
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 3013.16,
+    "error_categories": [
+      "english_intrusion",
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 11,
+    "prefix": "login credentials",
+    "next_word": "laantivi",
+    "predictions": {
+      "gpt2": {
+        "top1": ".",
+        "top5": [
+          ".",
+          "to",
+          "",
+          ",",
+          "for"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 8532.13
+      },
+      "mgpt": {
+        "top1": ".",
+        "top5": [
+          ".",
+          ",",
+          "to",
+          "and",
+          "for"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 376.72
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "to",
+        "top5": [
+          "to",
+          "for",
+          ":",
+          "v",
+          "and"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 2942.78
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "telugu",
+          "o",
+          "e",
+          "in"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 3576.7
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 2942.78,
+    "error_categories": [
+      "data_sparsity",
+      "english_intrusion"
+    ]
+  },
+  {
+    "idx": 76,
+    "prefix": "https www linkedin com jobs view 4261795902 amazon applied scientist internship apply if",
+    "next_word": "interested",
+    "predictions": {
+      "gpt2": {
+        "top1": "you",
+        "top5": [
+          "you",
+          "u",
+          "i",
+          "your",
+          "not"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 5311.03
+      },
+      "mgpt": {
+        "top1": "you",
+        "top5": [
+          "you",
+          "your",
+          "interested",
+          "this",
+          "u"
+        ],
+        "in_top1": false,
+        "in_top3": true,
+        "in_top5": true,
+        "ppl": 334.84
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "you",
+        "top5": [
+          "you",
+          "u",
+          "rame",
+          "i",
+          "job"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 2371.08
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "in",
+          "telugu",
+          "p",
+          "un"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 5574.9
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 2371.08,
+    "error_categories": [
+      "wrong_but_plausible",
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 0,
+    "prefix": "tangent to sinx at x 0 y axis",
+    "next_word": "ma",
+    "predictions": {
+      "gpt2": {
+        "top1": ".",
+        "top5": [
+          ".",
+          ",",
+          "(",
+          "",
+          "y"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1545.68
+      },
+      "mgpt": {
+        "top1": ".",
+        "top5": [
+          ".",
+          ",",
+          "",
+          "and",
+          "("
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1006.61
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "y",
+        "top5": [
+          "y",
+          "x",
+          "v",
+          "sin",
+          "n"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1494.26
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "am",
+          "e",
+          "alu",
+          "a"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 3512.06
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 1494.26,
+    "error_categories": [
+      "english_intrusion",
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 21,
+    "prefix": "send ai day",
+    "next_word": "photos",
+    "predictions": {
+      "gpt2": {
+        "top1": ".",
+        "top5": [
+          ".",
+          ",",
+          "to",
+          "and",
+          "-"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 11662.05
+      },
+      "mgpt": {
+        "top1": "care",
+        "top5": [
+          "care",
+          "dre",
+          "time",
+          "care",
+          "z"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 19801.42
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "n",
+        "top5": [
+          "n",
+          "a",
+          "y",
+          "na",
+          "i"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1425.72
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "k",
+          "er",
+          "o",
+          "e"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 5981.56
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 1425.72,
+    "error_categories": [
+      "data_sparsity",
+      "extreme_code_mixing"
+    ]
+  },
+  {
+    "idx": 41,
+    "prefix": "haan dekh rhe hain uspr",
+    "next_word": "bhi",
+    "predictions": {
+      "gpt2": {
+        "top1": "ay",
+        "top5": [
+          "ay",
+          "ung",
+          "ä",
+          "at",
+          "ud"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 800.99
+      },
+      "mgpt": {
+        "top1": "ing",
+        "top5": [
+          "ing",
+          "h",
+          "er",
+          "at",
+          "t"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 275.33
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "ab",
+        "top5": [
+          "ab",
+          "at",
+          "am",
+          "adesh",
+          "ay"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1377.6
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "telugu",
+          "e",
+          "alu",
+          "r"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 3793.33
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 1377.6,
+    "error_categories": [
+      "hindi_intrusion",
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 14,
+    "prefix": "i asked mahvith took the",
+    "next_word": "keys",
+    "predictions": {
+      "gpt2": {
+        "top1": "opportunity",
+        "top5": [
+          "opportunity",
+          "time",
+          "place",
+          "same",
+          "matter"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 3369.24
+      },
+      "mgpt": {
+        "top1": "time",
+        "top5": [
+          "time",
+          "opportunity",
+          "lead",
+          "phone",
+          "initiative"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 6235.08
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "place",
+        "top5": [
+          "place",
+          "decision",
+          "job",
+          "money",
+          "ball"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1231.88
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "e",
+          "er",
+          "alu",
+          "in"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1833.32
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 1231.88,
+    "error_categories": [
+      "wrong_but_plausible",
+      "extreme_code_mixing"
+    ]
+  },
+  {
+    "idx": 52,
+    "prefix": "bere are",
+    "next_word": "bradhas",
+    "predictions": {
+      "gpt2": {
+        "top1": "not",
+        "top5": [
+          "not",
+          "the",
+          "a",
+          "also",
+          "in"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 5309.85
+      },
+      "mgpt": {
+        "top1": "a",
+        "top5": [
+          "a",
+          "al",
+          ",",
+          "in",
+          "un"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 5658.92
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "you",
+        "top5": [
+          "you",
+          "the",
+          "k",
+          "not",
+          "a"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1166.34
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "lo",
+          "a",
+          "am",
+          "e"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 2764.84
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 1166.34,
+    "error_categories": [
+      "data_sparsity",
+      "tokenization_failure"
+    ]
+  },
+  {
+    "idx": 50,
+    "prefix": "ye simple function hai toh woh ai aur iai waale form mai likh",
+    "next_word": "de",
+    "predictions": {
+      "gpt2": {
+        "top1": ".",
+        "top5": [
+          ".",
+          "ha",
+          ",",
+          "to",
+          "m"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 399.73
+      },
+      "mgpt": {
+        "top1": "na",
+        "top5": [
+          "na",
+          "ne",
+          "ra",
+          "ny",
+          "s"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 653.8
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "inch",
+        "top5": [
+          "inch",
+          "ud",
+          "ara",
+          "anga",
+          "ul"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1150.34
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "am",
+          "e",
+          "er",
+          "j"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 7618.27
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 1150.34,
+    "error_categories": [
+      "hindi_intrusion",
+      "wrong_but_plausible"
+    ]
+  },
+  {
+    "idx": 69,
+    "prefix": "abey uss side aana tha",
+    "next_word": "kya",
+    "predictions": {
+      "gpt2": {
+        "top1": "n",
+        "top5": [
+          "n",
+          "he",
+          "fuck",
+          "m",
+          "tha"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 2660.2
+      },
+      "mgpt": {
+        "top1": ".",
+        "top5": [
+          ".",
+          ",",
+          "",
+          "..",
+          "..."
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 462.81
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "n",
+        "top5": [
+          "n",
+          "k",
+          "v",
+          "b",
+          "t"
+        ],
+        "in_top1": false,
+        "in_top3": true,
+        "in_top5": true,
+        "ppl": 1012.21
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "e",
+          "am",
+          "alu",
+          "a"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1904.73
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 1012.21,
+    "error_categories": [
+      "hindi_intrusion",
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 92,
+    "prefix": "have some shame",
+    "next_word": "anna",
+    "predictions": {
+      "gpt2": {
+        "top1": "in",
+        "top5": [
+          "in",
+          "about",
+          "to",
+          ",",
+          "."
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 4279.43
+      },
+      "mgpt": {
+        "top1": "on",
+        "top5": [
+          "on",
+          ".",
+          ",",
+          "about",
+          "and"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 354.14
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "to",
+        "top5": [
+          "to",
+          "on",
+          "in",
+          "about",
+          "of"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 812.83
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "a",
+          "e",
+          "er",
+          "alu"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 12240.49
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 812.83,
+    "error_categories": [
+      "english_intrusion",
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 29,
+    "prefix": "6 credit course why not to sit for",
+    "next_word": "placements",
+    "predictions": {
+      "gpt2": {
+        "top1": "a",
+        "top5": [
+          "a",
+          "the",
+          "this",
+          "it",
+          "an"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1066.03
+      },
+      "mgpt": {
+        "top1": "a",
+        "top5": [
+          "a",
+          "the",
+          "an",
+          "it",
+          "your"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1391.25
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "a",
+        "top5": [
+          "a",
+          "the",
+          "this",
+          "5",
+          "an"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 812.26
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "e",
+          "a",
+          "telugu",
+          "alu"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 9632.75
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 812.26,
+    "error_categories": [
+      "wrong_but_plausible",
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 56,
+    "prefix": "dussehra pandugavedi navaratri celebrations reaches peak telugu oneindia 14 min ago 25 26tedillo speakarla sadassu -rashtrapati prarambhopanyasam -muginpunadu modi speech 19 min ago jc pavan overaction 30 act amallo unnaa rally 15 mandi varaku arrest 21 min ago love jihad effect matmarpidula vyathireka bill 2020k up amodam 47 min ago 'surgical strike'bhavani kendram anuhyam -em jarigindo teleedanna home mantri kishan reddy dussehra pandugavedi homepage talk half today span general 06-10-2005 hyderabad rashtram dasara navaratri utsavaljoru upandukundi vinayakudi vigrahalaku poojaluchesinatte nagaramlonikalanillo ammavari vigrahalanu erpatu chesaru battala nagalu grihopakaranalaviya jorugaa sagutondi dricesenso arunelal patu ammite vajbe adaim e okka octoberlovast vyaparulu vishvasanto unnaru mudupandugalu -dussehra deepavali ranjan- vachchina e octoberbiginescu lucky masam pandugalante greeting cards sweetlu bokeluga maripoyi vyapar viluvale paicheyi avutunnayi dussehra pandugalavishettalanu telugu sanskritisamparadaya vivarimchendukuman rashtra samskruthika sakha publicgardensloni lalitakalatoranam dussehra utswalanunirvahistodondy thommidirojula patu e utsavaalu jarugutai navaratrulalommavaru rojuko rupamlo darshanamivvadaniki karanalanupandithulu vivaristunnaru batukammautsavalanu pradarshistupallevatavavaranannilitoranmlow aavishkarincharu panduga ante oka roja selavuga maripoyina sanskritisampadayalpi avagaahanakaliginduku prayatnistunnatturshtr samskruthika mandaliadhyaksha dharmavarapusubraman chepparu vajbe sankranti ugadi utsavaalanu tvaralone ongole cuddapah warangal vanti pattanallo nirvahinchalani samskruthika sakhayochistondi dasara-deepavali-ramjanpandugala sandarbhanga october nelalonerica gulf briton deshalanumchi manrashtraniki iravai kotla rupayalu batwada postal sakha anchana vesindi postalshakhaku anubandhanga unnavestarn union money transferdwara ennarail tamarmiyulaku bandhumitrulaku nagadukanukala pamputhunnarani tapaala sakhadhikaarulu chepparu nagadu batwadala raddini thattukunenduku abids charminar sikundrabadlalon pradhana postaphyss october 3nunchi rojuki 24 gantalu",
+    "next_word": "panichestunnayi",
+    "predictions": {
+      "gpt2": {
+        "top1": "15",
+        "top5": [
+          "15",
+          "23",
+          "24",
+          "20",
+          "17"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 989.45
+      },
+      "mgpt": {
+        "top1": "ch",
+        "top5": [
+          "ch",
+          "k",
+          "p",
+          "g",
+          "an"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 621.12
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "news",
+        "top5": [
+          "news",
+          "pr",
+          "k",
+          "tel",
+          "j"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 476.28
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "e",
+        "top5": [
+          "e",
+          "am",
+          "mariyu",
+          "ati",
+          "alu"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 3311.96
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 476.28,
+    "error_categories": [
+      "tokenization_failure",
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 81,
+    "prefix": "yea they had done very",
+    "next_word": "poor",
+    "predictions": {
+      "gpt2": {
+        "top1": "well",
+        "top5": [
+          "well",
+          "good",
+          "little",
+          "badly",
+          "much"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 319.46
+      },
+      "mgpt": {
+        "top1": "well",
+        "top5": [
+          "well",
+          "good",
+          "little",
+          "much",
+          "poorly"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 490.75
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "well",
+        "top5": [
+          "well",
+          "good",
+          "bad",
+          "nice",
+          "badly"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 424.88
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "e",
+          "al",
+          "er",
+          "j"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 7411.92
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 424.88,
+    "error_categories": [
+      "wrong_but_plausible",
+      "english_intrusion"
+    ]
+  },
+  {
+    "idx": 2,
+    "prefix": "mainly who says",
+    "next_word": "'sharp'",
+    "predictions": {
+      "gpt2": {
+        "top1": "that",
+        "top5": [
+          "that",
+          "he",
+          "it",
+          ",",
+          "\""
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 630.3
+      },
+      "mgpt": {
+        "top1": "that",
+        "top5": [
+          "that",
+          "the",
+          "they",
+          "it",
+          "you"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 356.31
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "it",
+        "top5": [
+          "it",
+          "that",
+          "what",
+          "i",
+          "'"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": true,
+        "ppl": 398.5
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "ara",
+          "in",
+          "ing",
+          "b"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 4910.7
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 398.5,
+    "error_categories": [
+      "tokenization_failure",
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 9,
+    "prefix": "no pa cancelled going next week didn t wake up till 2pm kada impossible for me to go to the station from kandi in 2 5",
+    "next_word": "hrs",
+    "predictions": {
+      "gpt2": {
+        "top1": "mins",
+        "top5": [
+          "mins",
+          "minutes",
+          "days",
+          "min",
+          "am"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 360.52
+      },
+      "mgpt": {
+        "top1": "hours",
+        "top5": [
+          "hours",
+          "h",
+          "m",
+          "pm",
+          "pm"
+        ],
+        "in_top1": false,
+        "in_top3": true,
+        "in_top5": true,
+        "ppl": 186.14
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "days",
+        "top5": [
+          "days",
+          "pm",
+          "mins",
+          "pm",
+          "minutes"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 263.19
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "2",
+        "top5": [
+          "2",
+          "ata",
+          "o",
+          "kanugon",
+          "er"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 5383.22
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 263.19,
+    "error_categories": [
+      "tokenization_failure",
+      "wrong_but_plausible"
+    ]
+  },
+  {
+    "idx": 65,
+    "prefix": "mantragathelo matritvam neelambari april 24 2015 april 24 2015 sharada dadapu padaharella kinda maa intillipadici chinnapillala sinimalu animated sinimalu alavataiahi aa alavatuninchi pillalu peddayi bayatapadda memiddaram chala pillala sinimalu chustune vuntam pillala sinimalu- animated sinimala dharmama ani maaku fairy tales anni baga telisipoyayi munupu ivanni okelagundevi aapadallo vunna andamaina rajakumarini ante andagadu dheerudu ayina rajakumarudo leda inke veerudo vacchi ammayini rakshinchi chepattatame katha ippatiki chala sinimalu alaage vuntunnayani meerante nenu cheppagaligedemi ledhu aithe gata rendu mudelluga hollywood low tayarayye e fairy tale sinimallo konchem marsocchindi konchem strivadam jorabadindannamata kathalo hero lekapote yemavutundi aasalu heroine yenduku andarini rakshinchali heroin tanani tane rakshinchukovachchuka ilati tipannamat rendella kinda brave 2012 ane animated cinema vacchindi nakadi bhale nachchindi aa sinimalo heroin k rajakumarula dhyase vundadu paigah tama rajyapu simhaasanam kosam tane potiloki digutundi siggulu paduthu potilo neggi tana cheyi pattukoboyevadi kosam eduru choodakunda aa tarvata frozen 2013 andulonu ante rajakumarulaku heroluck asale mathram patraleni cinema akka-chellella prema anubandhala gurinche anta aa cinema patalu kuda super hittu maku pichi pichiga nachchesai iha e madhye choosina melificent 2014 cinema natchindante vintemundi sleeping beauty katha manandariki telisinde tana barasalaki pilavani perantanga vachchina mantragatte chetilo shapagrasturalavudi rajakumari aurora a shop prabhavam valla padaharoyate choopudu velilo soody gucchukuni dirgakalam nidraloki jaripotundi ameni manasfurthiga preminche rajakumarudochi muddupettagane lechi kurchuntundi ide kathani pers pective march chala asaktikaramaina sinimani teesaru anaganaga oka pedda rajyam danny chuttumutti pedda adavi aa adavilo chitra vichitramaina jantuvulu mantragathelu santoshanga egire fairies adoka andamaina rangurangula prapancham aa prapanchamlo andaru tanavallenani navvulu puvvulu okatenani namme amayakapu fairy melificent rajyamloni prajalaki adaviloni jeevulaki madhya pedda agadham valliddarini kalapalante oka nayakudo leka prathi nayakudo hero or a villan ravalanna vyayakhyananto modalavutundi cinema okanadu- rajyam nunchi oka yuvakudu- stephan adavilokostadu melificent to sneham chestadu aame balmine rekkalanu akasam vipe dusukupoye manastatwanni chusi muchutpadatadu peddayyeloga iddarilonu prema chiguristundi amayakanga tana rahasyalu bhayalu annie atanito panchukuntundi melificent ila vundaga okasari- peddarajyapu rajugaru jabbu chesi maranimchabotuvuntadu tana kuturni chepatti tana tarvata rajyannelaboyevadu adavilo vunna vichitra jeevulanu lobarchukovaalani prakatistadu aa prakatana vinagane stephan low ashapuduthundi advilokochchi mosanto melificent rekkalu kathirinchesi paripotadu nidranunchi melkoni rekkalu tegipoyayani telususkunna melificent bavurumantundi prateekareshtoto ragilipothundi kalinadakana adavanta tirigutu vuntundi tana rangurangula prapanchanni nalupuloki marchukoni manushulevaru malli rakunda adavini durbedyanga marustundi okaroju adavi chuttupakkalathirugu manushulandaru lobarchukoni hinsistunna oka kakini tana mantrabalanto thappistundi krithannatho aa kaki yeppatikappudu rajyamlo jarige viseshalanni melificent k cheravestu vuntundi stephan anukunnattugane rajakumarteni pelladi pedda rajyaniki rajaiah vallakoka kuturu kuda puttindi aa roje barasala- pagato ragilipothu akkadiki cherukuntundhi melificent puritikanduki andaritopatu tanu bahumati istanani cheppi neeku padharellu ragane cheti veliki chudi gucchukuni mrityuvulati nidraloki jaripothavu nijamaina prema vunna vadocchi muddupettukunte thappa levalevu ani shapam ichchi akkanninchi vellipothundi melificent prapancham lo nijamaina prema anedi lene ledani rajakumari aurora maranimchinattenani bhavisthundame stephan tana kuturni rajyaniki dooramga oka chinna kutiram mugguru fairies sam rakshana low vunchutadu kani kaki dwara aurora viseshalu yeppatikappudu melificent telusukuntune vuntundi adavilone tirugutu vunna melificent ki eppudu adukuntu vunde rajakumari aurora tarasapaduthune vuntundi entha kathinanga vundalanukunna melificent manasu aa chinnarini chusinappudalla karigipothune vuntundi aa pilla navvulu muddu matalu amayakatwamu ekkado aame hrudayaniki galam vesi lagutu vuntayi aurora perigi peddadavutunna kotte tanichinnata ghora sapanni talachukuni purtiga nirash padipothundi melificent nijamaina prema anede prapanchamlo lenappudu aa chinnadaniki sapavimocanam ela padharo puttinarojuna tandri kota cherukuntundhi aurora aame aa roju nidraloki jaripovadam thappadani telisi tanaku adavilo tarasapadda oka andamaina yuvakudito tanu kota cherukuntundhi melificent aame vastundani telusukunna staphan elagaina ameni champenduku vyuham siddam chesukunnadu yuvakudu rajkumartheki shop vimochanam kaliginchagaligada aasalu nijamaina prema ante yemiti rajyaniki adaviki madhya varadhi evaru nirmincharu heroine villana asalu hero villanu vanti matalaki arthalemiti vanti prashnalannitiki cinema mugiseloga samadhanam telustundi cinema antha melificent ga engeliny jolie tana bhujalapaine mosindi paga-prema renditi madhya sangharshana chala sunnithanga vyaktikarinchindi motham nallati dustulu errati lip stick aame manasika sthitiki addam pattayi nakenduko aa rendu rangulu aame manasuloni nirasa kopalaki prateekaluga vadaranipinchindi rajakumarte aroraga jolie kuturu okka kshanam merisindi sangeetham cheppukovalsindi i nou- i walk with you- once upon a dream gurinchi e paata modatisari disney tisina sleeping beauty lonidi andulo husharuga hayiga vunde paata e sinimalo vishadanga lothuga anipistundi baga telisina kathaki kotha kathanam to e cinema pillalakemo kani adavallaki baga nachchatchu bangaraniki merugu mudital nervaga rani vidya kalade one thought on mantragathelo matritvam 11 35 uda vadla april 25 2015 avunu clash half the titans jack and the bin stock sinderella kadhalaki kotha versions kuda bavuntayi manaki manchi kadhalunnayi manavallu unnaru",
+    "next_word": "yenduku",
+    "predictions": {
+      "gpt2": {
+        "top1": "at",
+        "top5": [
+          "at",
+          "am",
+          "ata",
+          "ap",
+          "al"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 530.16
+      },
+      "mgpt": {
+        "top1": "k",
+        "top5": [
+          "k",
+          ".",
+          "ch",
+          "v",
+          "n"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 468.64
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "am",
+        "top5": [
+          "am",
+          "ad",
+          "al",
+          "ut",
+          "at"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 250.9
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "e",
+        "top5": [
+          "e",
+          "am",
+          "mariyu",
+          "ch",
+          "anu"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 4820.09
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 250.9,
+    "error_categories": [
+      "tokenization_failure",
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 77,
+    "prefix": "tutorial ether eth konandi mariyu metamasku pampandi 2019 blockchaincryptocurrencyethereuminvestingtoryyal brickblack yokka smart contract platformlo token cheyabadina astulalo pettubadulu pettadam prastutam eth ether to matrame sadhyamavuthundi prapanchamloni mottamodati tokanized real estate vastuvunu jabita cheyadaniki memu daggaravutunnappudu mee ethereum wallet low veelainantha twaraga eth pondadam mukhyam mee gurthimpunu druvikrinchadaniki exchangies avasaram kabatti eth konadaniki konni rojulu pattavachchu brickblack yokka smart contract platforms connect kavadaniki miru metamosk kaligi undali kabatti mee ethereum valetga metammasku upayoginchalani memu baga sifarsu chestunnamu nirakaran e tutoriallo andinchina salaha oka sifarus matrame mariyu rachayita leda ituka black edaina hacks leda dongilincabadina colpoen nidhulaku etuvanti badhyata tisukodu prapanchamloni everaina platform pagelo vivarinchina vidhanga konni desala nivasitus leda pourulanu minahayinchi prapanchamloni mottamodati tokanized real estate astula ammakam palgonavacchu pettubadi pettadaniki mundu vitelist kosam namodhu chesukovadam mariyu kyc samacharanni samarpinchadam thappanisari meeru deeniki kothaga unte mariyu eth ante emito teliyakapote marinta telusukovadaniki ikkada click cheyandi mee metamosk valetku eth nidhulu samakurchina tarvata tokanized real estate astulalo pettubadi pettadam chala sulbhamaina prakriya 1 pettubadi pettandi metamosk nundi eth to asthi yokka digital vatalanu konandi 2 poa tokennu sweekarinchandi poa tokens proof-half-asthi yajamanyam yokka anni arthika prayojanalanu suchistayi metamosk nundi eth pampin tarvata meeru bokenlanu sweekaristaru asthi purtiga ardhika sahayam cheyakapote miru tisukuvachchina eth nu tirigi claim cheyavachu brickblack token nirmanam yokka purti vichinnam ikkada chadavandi 3 avashesh adayanni sampadinchandi mee poa tokens real estate astula labhal nundi nishkriyatmaka nelavari adayanni pondutayi labhamlo mee vata mee ethereum metamask chirunamaku pampabadutundi meeru pettubadi pettadaniki mundu meeru tokanized real estate ammakam palgondaniki mundu konni avasaralu thirchali modata miru metamosk wallet erc-20 anukulamainadi nu setup cheyaali ikkada meeru mee eth nu srushtinchi mee proof-half-asset poa tokennu andukuntaru mukhyamainadi metamosk oka eth wallet mariyu ethereum blockchain browser brickblack yokka telivaina contract platforms connect cheyadaniki miku metamosk avasaram anduvalla meeru mee eth valetga metammasku upayoginchalani memu gattiga sifarsu chestunnamu deeni kosam memu ikkada oka tutorial srishtinchamu tokanized real estate asthi ammakam vitelist kosam namodhu cheyandi mee passport mariyu camera siddanga undandi ikkada namodhu cheyandi eth ether pondandi meeru eth nu pondalanukune marpidini enchukondi taruvati vibhagam memu konni atyanta prajadarana pondina empicalon parichayam chestamu chivari dasa mee eth nu exchange nundi mee metamosk valetku badili cheyadam metamosk wallet erpatupai maa tutorial ikkada chadavandi 3 mariyu 4 dashalu krinda marinta vivaranga vivarimchabayi meeru nalugu dashalanu purti chesina tarvata miru ammakam palgondaniki siddanga unnaru eth konadaniki marpidini enchukondi inthaku mundu cheppinatluga brickblack yokka intelligent contract platform dwara pettubadi pettadaniki ekaika margam prastutam eth vadla vundi fth currency us dollars eurolu gbp yen modalainavi to marpidipi konugolu cheyadam eth ki velladaniki atyanta sadharana margam enchukovadaniki dozen exchangies unnaayi mee parishodhana cheyadam meeku uttamanga pani chesedanni enchukovadamlo sahayapaduthundi meeru upayoginche marpidini batti miru mi muldhananni pramadamlo padavacchu dayachesi fishing prayatnalu mariyu scamarla vishayam jagrattaga undandi konugolu cheyadaniki mundu mee ardern samikshinche avakasam meeku vundi meeru ether kosam sarasamaina dharapai mee parishodhana cheyadam chala mukhyam idhi meeru upayogistanna marpidipi adharapadi untundi meeru ekkada nivasistunnaru anedanipai adharapadi miru upayoginchagala atyanta prachuryam pondina konni exchengies seggam memu cherchamu uttara america coinbase eth konadaniki sulbhamaina mariyu vegavantamaina margam bitstamp urap luno exmo rashya africa uttama marpidi miru nivasinche desampai adharapadi untundi bitso jebpe upbit bithumb kayinon btc markets australia marpidipi namodu meeru e marpidini enchukunna e tutoriallony migilin dashalu oke vidhanga untayi e guide yokka prayojanam kosam crackenlo eth nu namodhu chesi konugolu cheddam marpidi kosam namodhu cheyandi mee viniyogadaru peru mariyu passwordn surakshitanga unchandi meeru mee khata kosam bahula-karakala pramanikarananu upayoginchamani sifarsu cheyabadindi 2 mee gurthimpunu dhruvikrinchandi mee passport mariyu chirunama rujuvu utility bill vantivi unnaayani nirdharimchukondi meeru entha eth konalani chustunnaro batti miru entha upasanhari jagrathaga undali konni adanapu dashalanu adhika sthayilo cheyadam dwara meeru meere dhruvikrinchukovalasi untundi uda cracken sthayi 3 4 gamanika marpidini batti samikshaku rojulu leda varalu pattavachchu dayachesi meere mundugane tanikhi chesukondi kaabatti meeru e mailurayiki hajarukavaddu ippudu miru vecchi undandi mee marpidi khata drivikrinchabadina tarvata miru thadupari dasaku vellavachchu eth konandi eth konandi criptocrency marpidi kosam mee bank khata nundi kothaga srishtinchina khataku nidhulanu badili cheyandi mee khata balance exchangelo pradarshinchadaniki konni rojulu pattavachchani dayachesi gamanimchandi gamanika meeku bank khata lekapote leda cracken vanti mudava partick mee ideni pampadam dwara mee gopyatanu vadulukovaalanukunte ithara empical unnaayi b ithara vyaktula nundi atm vadla leda sytlo eth konugolu ivi sadharananga eth pondadaniki pramadakaramaina mariyu khareedaina margalu maa tutoriallo memu crackento konasagutamu cracken vadla miru deposit bhavani click chesi apai mi exchange khatalo jama cheyadaniki mee fiat karencini enchukondi bhavani click cheyaali maa tutoriallo manam eurolu eur enchukuntamu meeku ishtamaina badili paddatini enchukondi mariyu suchanalanu jagrathaga anusarinchandi meeru mee bank khata nundi exchange bank khataku dabbunu badili cheyaali e dashalu e tutoriallo chupabadavu endukante avi mee bank nivas desam mariyu sthanic karencipai ekkuvaga adharapadi untayi meeru mee marpidiki badili chesina nidhulato jama ayina tarvata miru konasagavachu ippudu mee eth konadaniki samayam aasannamaindi trading bhavani click chesi currency jabita nundi meeru eth konalanukune paddatini enchukondi memu maa khataku eurolu eur to nidhulu samakurchinanduna eth konadaniki memu eth eur ni enchukovali meeru eth eur nu enchukunna tarvata miru entha ether konaalanukuntunnaro suchinchandi mee konugolu eur lo entha kharchavutundo cracken ventane meeku chuputundani gamanimchandi maa udaharanalo memu 1 ethern konugolu chestamu idi rase samayamlo 559 52 eur ki samanam gamanika miru upayogistanna marpidini batti e dasalo mee muladhanam pramadamlo padavacchu ether konadaniki sulabhamaina margam market ardern uncham market order anedi konadaniki leda ammadaniki vegavantamaina mariyu sulabhamaina margam aithe idhi meeku uttam dharnu hami ivvadu meeru chellisthunna khachchitamaina dharnu telusukovalante parimiti order ivvadam manchidi oka vyapari miru andistunna dharato angikristay atanu mee parimiti kramanni amalu chestadu kani miru konugolu chese eth kosam meeru emi chellinchalanukunnaarrow telusukovadam mee ishtam vividha order rakala gurinchi meeru ikkada marinta samacharam pondavacchu mee orderto miru santripti chendinappudu ardern samarpinchu click chesi lavadevi jarige varaku vecchi undandi mee order amalu cheyabadinappudu purtayindi meeru mee eth nu vijayavanthanga pondaru chivari dasa mi eth nu metamasku badili cheyandi exchangelo eth nu konugolu chesina taruvata miru danini mee metamosk valetku pampavachu gurtunchukondi brickblack dwara pettubadi pettadaniki meta mask avasaram metamosk wallet srishtinchadam gurinchi maa tutorial ikkada vundi exchange veldi ushamaharinchu bhavani click chesi apai ether bhavani click cheyandi mee save chesina chirunamala jabitaku mee metamosk valetnu jodinchandi deenni cheyadaniki modata mee metamosk wallet nundi chirunamanu copy cheyandi appudu danny cracken chirunama fieldlow atikinchandi chirunama sangga copy cheyabadindani nirdharimchukondi lekapote meeru mee dabbunu kolpotaru meeru mee chirunamanu drivikrinchina tarvata miru upasanharincukovalanutunna mothanni enchukuni ushamaharananu nirdharinchandi click cheyandi meeru twaralo mee eth khata balance https etherscan io address yyr address vadla ikkada kanugonali meeru ippudu prapanchamloni mottamodati real estate tokenlo pettubadi pettadaniki siddanga unnaru marinni suchanalu tvaralo anusaristayi annintilo modatidi miru anumati jabita kosam namodhu cheyabaddarani nirdharimchukondi vyaktigatamga uchitanga justine bibernoo ela kalavali1080p nundi 4k varaku ela penchaliblak apps 3 ps 4 low newcatown ela pondaloshart ela nirvahinchaloreptical lekunda sonos playbarn tvk ela connect cheyalitakkuva chilikalanu ela kottalibra cup carling ela parishkarinchalikandasalakshmi powder lekunda fruit custard ela tayaru cheyali mee website mee adarsha customerga kanipistundihyuman versus ai ledhu idi manava ai parinamanmudava partiny upayoginchakunda vijayavantamaina email jabitan ela tayaru cheyaalo ikkada vundi mingelcheinto blacchain eventlanu ekkuvaga pondadam elafonctional vyaparanni ela nirminchalimiku cavalosin alavatlanu abhivruddhi cheyadaniki gurtimpu shaktini ela upayoginchalisangita vayidyamlo ela praveenyam pondalima anubhavjanlaina engineers meeku salaha ivvanivvandi idi andariki",
+    "next_word": "teliyadu",
+    "predictions": {
+      "gpt2": {
+        "top1": "h",
+        "top5": [
+          "h",
+          "t",
+          "k",
+          "ta",
+          "esh"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1168.85
+      },
+      "mgpt": {
+        "top1": "v",
+        "top5": [
+          "v",
+          "ch",
+          "n",
+          "pra",
+          "che"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 375.62
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "hy",
+        "top5": [
+          "hy",
+          "h",
+          "har",
+          "hya",
+          "ham"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 248.31
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "e",
+          "alu",
+          "lo",
+          "am"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 3232.9
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 248.31,
+    "error_categories": [
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 3,
+    "prefix": "web site viniyoga survey kosam 5 prashnala jabitato",
+    "next_word": "randi",
+    "predictions": {
+      "gpt2": {
+        "top1": "k",
+        "top5": [
+          "k",
+          "5",
+          "n",
+          ".",
+          "j"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 2451.62
+      },
+      "mgpt": {
+        "top1": "ki",
+        "top5": [
+          "ki",
+          "me",
+          "k",
+          "h",
+          "b"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1305.69
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "v",
+        "top5": [
+          "v",
+          "k",
+          "sam",
+          "n",
+          "pr"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 207.94
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "telugu",
+          "e",
+          "b",
+          "am"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 7672.78
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 207.94,
+    "error_categories": [
+      "tokenization_failure",
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 26,
+    "prefix": "distopian bhavishyattulo sage navalaku akarshaniyamaina prarambha vakyanni",
+    "next_word": "srishtinchandi",
+    "predictions": {
+      "gpt2": {
+        "top1": "k",
+        "top5": [
+          "k",
+          "s",
+          "j",
+          "b",
+          "n"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 2405.18
+      },
+      "mgpt": {
+        "top1": "v",
+        "top5": [
+          "v",
+          "ch",
+          ".",
+          "p",
+          ""
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 334.87
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "v",
+        "top5": [
+          "v",
+          "k",
+          "mar",
+          "n",
+          "pr"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 179.73
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "ala",
+          "telugu",
+          "e",
+          "alu"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 12366.82
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 179.73,
+    "error_categories": [
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 40,
+    "prefix": "hacked this together in",
+    "next_word": "4-5hrs",
+    "predictions": {
+      "gpt2": {
+        "top1": "a",
+        "top5": [
+          "a",
+          "the",
+          "my",
+          "one",
+          "an"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 178.87
+      },
+      "mgpt": {
+        "top1": "a",
+        "top5": [
+          "a",
+          "the",
+          "one",
+          "less",
+          "order"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 74.81
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "a",
+        "top5": [
+          "a",
+          "the",
+          "one",
+          "my",
+          "2"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 177.73
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "er",
+          "telugu",
+          "e",
+          "un"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1698.18
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 177.73,
+    "error_categories": [
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 42,
+    "prefix": "good idea but i think the clicks dudes will be able to pull it of better than these",
+    "next_word": "folks",
+    "predictions": {
+      "gpt2": {
+        "top1": "guys",
+        "top5": [
+          "guys",
+          ".",
+          "two",
+          "other",
+          ","
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 208.89
+      },
+      "mgpt": {
+        "top1": ".",
+        "top5": [
+          ".",
+          "gu",
+          "",
+          "two",
+          "cl"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 74.82
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "guys",
+        "top5": [
+          "guys",
+          "people",
+          "clicks",
+          "other",
+          "ads"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 177.42
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "telugu",
+          "e",
+          "il",
+          "am"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 6612.54
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 177.42,
+    "error_categories": [
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 55,
+    "prefix": "viniyogadarudiki kotha smartphone avasaram manchi battery life high quality camera 600 dollars budget unna phone cavalani vaaru korukuntunnaru variki iphonesapai asakti",
+    "next_word": "ledhu",
+    "predictions": {
+      "gpt2": {
+        "top1": "k",
+        "top5": [
+          "k",
+          "n",
+          "v",
+          "sa",
+          "va"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 1350.55
+      },
+      "mgpt": {
+        "top1": "ch",
+        "top5": [
+          "ch",
+          "",
+          "v",
+          "app",
+          "."
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 540.03
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "v",
+        "top5": [
+          "v",
+          "n",
+          "mar",
+          "k",
+          "pr"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 172.71
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "an",
+          "e",
+          "telugu",
+          "am"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 12475.71
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 172.71,
+    "error_categories": [
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 38,
+    "prefix": "lekkalatho saha pradhani narendra modiki tejaswi yadav counter tejashwi yadav does the math for pm narendra modi telugu oneindia 13 min ago udyogala parit dabbulu gunji vidyarthinulanu munchina software company 13 min ago evem ankshalura babu mobile vadite lakshannara fine 18 min ago seem jagan photo pettam maa seem inka ayane o university adhikarula nirvakam 19 min ago tasmath jagratha chinnarulanu kabalistonna prananthak virus emita virus finance nustalive angikarincham faran currency bondspy modiki aresces shock lekkalatho saha pradhani narendra modiki tejaswi yadav counter published wednesday april 11 2018 22 01 ist patna biharlo tailetlapy pradhani narendra modi chesina vyakhyalaku arjedi netha tejaswi yadav lekkalatho saha counter ichcharu champaran satyagraha shatabdi utsavala mugimpu sanrbhanga mangalavaram modi biharlo paryatincharu indulo bhaganga erpatu chesina samavesamlo maatlaadutu bihar prabhutvam varam rojullo 8 5lakshala marugu doddanu nirminchindani prashansincharu varam rojullo bihar prabhutvam 8 5lakshala marugudoddanu nirminchindani antha veganga nirminchadam sadhyamaina vishayam kadani e veganto velite bihar jatiya sarasarini thondarlone andukogaladani modi annaru tejaswi yadav twiter dwara spandistu vaaramlo 8 5lakshala marugudoddanu nirmincharante nimishaniki 84 marugudoddanu nirmincharani arthamani vatannintini o lekka rupamlo vivarincharu ido pedda ankela garadi annaru antha veganto marugudoddanu nirminchadam manava matrulaku saadhyam kadannaru biharlo swachcha bharath karyakramam amalu chala mandakodiga sagutondannaru marinni tejashwi yadav varthalu balivudloki entry ichchina bihar maaji mantri jaillo tandri lalu bachcha kadani telchina tanayudu tejasvi 'theerpu savaal chestam bjpto kaliste laloo harishchandrude' rahul gandhi nenu lunch cheste jirninchukovadam ledhu tejaswi yadav tejasvi medapai kathi sonkshobhamlo nitish sarkar laluk nitish shock tejaswi yadav deputy sym padaviki check kodukula kosam 'desi girls' veta a ammayilu vaddani rabri sharatulu tejashwi yadav maths pm modi narendra modi bihar narendra modi tejaswi yadav rjd leader tejashwi yadav took a dig at prime minister narendra modi for the latter allegedly messing up his",
+    "next_word": "arithmetic",
+    "predictions": {
+      "gpt2": {
+        "top1": "d",
+        "top5": [
+          "d",
+          "r",
+          "ri",
+          "pal",
+          "ga"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 389.92
+      },
+      "mgpt": {
+        "top1": "own",
+        "top5": [
+          "own",
+          "campaign",
+          "budget",
+          "performance",
+          "election"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 91.28
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "adish",
+        "top5": [
+          "adish",
+          "r",
+          "al",
+          "av",
+          "adh"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 165.01
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "e",
+        "top5": [
+          "e",
+          "alu",
+          "am",
+          "anu",
+          "tej"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 2884.84
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 165.01,
+    "error_categories": [
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 83,
+    "prefix": "pavan vyakhyalaku sanchayita counter amaravathi tananu hinduyatar vyaktiga chitrikarinche pracharalanu nammavaddantu janasena party adhinetha pavan kalyanku simhachalam devasthanam trust board mansas trust board chairperson sanchayita gajapathiraju hitavu palikaru tana thallidandrulu hinduvulani tanu kuda hindu dharmanni patistanani spashtam chesaru tanu annimatalanu gouravistanani perkonnaru simhachalam devasthanam mansas trust vishayam gata chandrababu prabhutvam chesina akramalu bayataku tistunnandune tanapai asatya pracharam chestunnarani kabatti tana gurinchi chesina vachyalanu sandiddukovalani pavanku suchincharu maro prakatana vidudala cheyadamo leda tana vyakhyalaku vivarana ivvadamo cheyalannaru hundatanam unna vyaktiga pavan nunchi ide ashistunna antu gaji counter",
+    "next_word": "ichcharu",
+    "predictions": {
+      "gpt2": {
+        "top1": "k",
+        "top5": [
+          "k",
+          "v",
+          "d",
+          "ati",
+          "ay"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 338.91
+      },
+      "mgpt": {
+        "top1": "ch",
+        "top5": [
+          "ch",
+          "",
+          "v",
+          "che",
+          "pra"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 153.39
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "ch",
+        "top5": [
+          "ch",
+          "ach",
+          "ay",
+          "ena",
+          "aru"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 162.7
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "e",
+        "top5": [
+          "e",
+          "am",
+          "an",
+          "alu",
+          "a"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 4008.64
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 162.7,
+    "error_categories": [
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 94,
+    "prefix": "ai language model ga stock market panitirunu anchana vese leda real time financial dayton access cheyagala samarthyam naku ledhu dow jones industrial average arthika data global events mariyu company varthalu vanti aneka amsalache prabhavitamavutundi taja samacharam kosam financial analyst nu sampradhinchadam leda financial news web saitlanu tanikhi cheyadam",
+    "next_word": "manchidi",
+    "predictions": {
+      "gpt2": {
+        "top1": "n",
+        "top5": [
+          "n",
+          "v",
+          "k",
+          "s",
+          "b"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 903.97
+      },
+      "mgpt": {
+        "top1": "led",
+        "top5": [
+          "led",
+          ".",
+          "v",
+          "ch",
+          ""
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 351.43
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "mar",
+        "top5": [
+          "mar",
+          "v",
+          "k",
+          "n",
+          "tel"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 157.91
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "e",
+          "j",
+          "leda",
+          "alu"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 6903.02
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 157.91,
+    "error_categories": [
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 57,
+    "prefix": "muslim minority kavitvam stree anchiveta shake ibrahim streevada patrika bhumika arbhatam leni adarsha vivahalanu adarinchi abhinandinchali pasupuleti ramadevi le miserab uma nutakki muslim minority kavitvam stree anchiveta shake ibrahim kulam matam vargam jatulu pranthalu ani bhedam lekunda streel samajikanga rajkiyanga arthikanga vidyaparanga laingikanga kutumbaparamgaa oka mana bharatadesamle kaka prapancha vyaptanga netici purushadhipatyam chetilo anchiveyabadutunnaru samajam migata varlala streela kanna muslim strilapai ekkuvaga matha acharalu purushadhipatyam vidhinchina acharalu anktala valla vaaru anchivetaku nirbhandaniki guravutunnaru muslim minority streevada kavita udyamam oka goppa samajic chaitanya avasaram nunchi puttindi avedanato kudin avesam chaitanyavantamaina spruha deeniki thodaindi muslim minority streevada kavita udyamam ante muslim streela anchivetalaku karanalu velikitisi vatini rupumapi varini chaitanyavantamaina darilo payanimpajeyadam migata samajam kanna migata matala kanna muslim samajam islam matamlo streela paristhiti bhinnamaindi matalanni streeni rendava jati vyaktigane pariganistunnappatiki islam matam marikonta munduku velli streeni parada chatuku nettindi purushula kantapadatame pedda neranga kattady chesindi muslim streela chuttu allukunna parada valla ashalni kalalni nallati cheekati musugu kinda thokkipettindi e paristhitini dhikkaristu matha ankshalanu niladisthu muslim streevada kavitvam mundukocchindi ani vinodini garu muslim streevada kavitvanni gurinchi vivarana ichcharu prapanchamlo a matmaina anduloni stree patra namamatranga untoo purushunikanna takkuva sthayilo unchutu purushuniki lobadi undela chustondi aithe inka adhunika prapancha prabhavam peddaga padani muslim samajam stree sthanam marinta durbharanga anchiveyabadutondi deeniki pradhana karanam rajakeeya arthika samajic avidya ane cheppavachchu 'muslim streel abhivruddhi chendakunda muslim samajam abhivruddhi chendadu muslim samajam abhivruddhi chendakunda mana bharatiya abhivruddhi sampoornam kajaladu cavan sahityakarulu vimarsakulu vidyavettalu cheyutanandinchi muslim strilanu samajanni pragathivaipu nadipinchalsina badhyata samaja sreyassunu kore prathi okkaripaina undane abhiprayanni muslim minority sahityakarulu gurtincharu muslim vadam bahya poratame kadu antargata poratam kuda chentunnadi svamatamloni duracharalanu sampradayalanu teevranga khamdimcharu muslimvada kavulu mukhyanga muslim samajam strilapaina amalavutunna aneka anyayalanu veeru ethi chuparu munduga purushule e konamlo kavitvam rasharu tarvata streel tama swantha samasyala gurinchi raasaru ani shahjahana muslim minority vadam gurinchi vishadeekarincharu muslim stri vadam modata purusha gontu nunche veluvadindi matha chandasavadula valana muslim samajamloni streel vantintiki padaggadiki parimitamai banis bathukulu batukutu matam vidhinchina musugulo anichiveyabaddaru muslim strilalo daagi unna manovedananu akshara rupamlo modata chitrinchinadi khaja batakdanni bandhala madhyanumchi thappa kallaminchi zarina nalla kafanlonchi thappa kalalo kathallo thappa ruchi chudani vallam kadaa mementh nindu pournimalai udayinchina mee meghala magahastas kappi mammalni vikarulni cheyandi kattubatla vachakachadaalni niluvuga dharinchina vallam kadaa a idarendla kosaro thobuttuvu nikhako valeema vinduko bayalderite mee ahankarapu gotamulni kappi mammalni saitanulli chesi thisukellandi khaja 'sharatu' muslim samajam daagi unna streela samasyalni telugu sahiti prapancha patampai chitrinchina modati kavitha e 'sharatu' kavitha 1994 august andhraprabha varapatrikalo achchayindi muslim samajamloni streel pandugalu-pabbalu nikha-valeema mariyu utsavaalu jarigetappudu kutumba samethanga kalisi vajbe samayamlo kuda andhakaranga mammalnoka deyyaluga chesi thisukelthunnaru ani manovedana chendutu maa kallapai kuda nallati gotamulni kappi meere maaku dari chupinchandi ani asahnanni prakatistunna muslim streela badhanu chitrinchi muslim streela sangha samskartaga meligadu hrudayaniki upiradtam ledhu e udayallo nakenduki cheekati vesham nanno asparishyanu chesi burkalo dacheste naa 'gulsoshi' todigina punavvalaki naa kalala 'chandini'k a pavitra grantham pranam postundi naa mukhaniki veladesin nakhach ethi chushava ennadaina skybaba 'hijach ' skybaba rasina e kavitha achcham muslim stree rasinatlundi parada chatun daagi unna badabagnini anchivetaku chidramavutunna jeevithalni muslim stree gontukaku pratinidhyanga chitrinchadam metchukodagina vishayam modatlo khaja skybaba hanif modaline kavula nunchi veluvadina kavithalu muslim streevada kavitvaniki dasanu dishanu nirdesinchame kaka muslim streevada kavitvaniki muslim stree chaitanyaniki pragathiki punadi vesaru ide ritilo shukur-bubamma shaik mohamed rafi entha ekina tegani ragam modalagu kavithallo muslim stree gontuka modata purusha gontulonche veluvadlayi muslim stree anchivetaku burakhatopatu vidakulu kuda karanamavutunnayi e vidakulu rendu rakaluga teesukuntaru andulo okati talaq rendu khula bhartha bharyaku ichche vidakulanu 'talaq' antaru stree bhartaku ichche vidakulanu 'khula' antaru islam matamlo 'nikha vivaham ' anedi stri purushunddaru aatmiya chirakala bandhanga kalisi jeevinchadaniki oka angikara oppandam idi iddari amodanto jarugutundi indulo e okkariki ishtam lekapoyina 'nikha' jaragadu vinddari vivaha jeevitam sangga lenappudu purushudu 'talaq' dvara stree 'khula' dwara vivaha bandhanni raddu chesukovachchu purushudu 'talaq' cheppinanta suluvuga stree 'khula' cheppaledu deeniki karanam streel arthikanga tama kallameeda tamu nilavalekapovadame deeniki vaari avidya burkha purushahankaram karanaluga cheppavachchu puttinappati nunchi streeni thallidandrula samakshamlo burakha chatun madrasa mata vidyake parimitam cheyadamvalla stree bayatiki velladam avamananga bhavinchadam valla aame pelliki mundu thallidandrula samrakshanalo pelli tarvatha bhartha samrakshanalo vruddhapyam kodakula samrakshanalo jeevitam saginchalsi ravadam valla aame arthikanga balpade avakasam lekunda potondi anduke purushudu 'talaq' cheppinanta suluvuga streel 'khula' ivvaleru okavela 'khula' ichchina samajam pette sutipoti matala himsan bharinchaledu e himsakante bhartha pette hince nayamani alochisthundi asalu chalamandi muslim strilaku 'khula' alochane radu stree arthikanga edigithe kani 'khula' cheppaledu jeevitanni vidadiyadam everycy ishtamundadu kaani vaari kashtalanu edurkovadaniki strilaku 'khula' anedi oka ayudham ani cheppagalam 'talaq' valana streele ekkuvaga nashtapotunnarane vastavika dhrukkonanto haneef 'vandella kapuralu kavali' antunnadu talaq talaq talaq mee notlo vela samvatsarala pachi vasan aurat ante padagadullo kalipotunna agarothulena vallem vastuvulu kadu madhyalo natchakapote giratu veyadaniki oka putalo vadipoye pool kadu flower vajullo pulla marchukovadaniki vandella kapuralu kavali haneef 'vandella kapuralu kavali ' magatanapu dheema 'talaq' ani moodusarlu cheppinanta matrana bharyato vivahabandham purtiga tegatempulai pothundi jantuvunu balche mundu nillu taginchi a vidhanga balistaro aa vidhanga nikha peruto vivaha bandham adugupettina streela rasanni pilchukuni talaq cheppe adhikar murkulaku avivekulaku chithasuddito haneef duhabharanto hitabodh chestunna vishayanni gamanimchavachchu talaq valana stree arthikanga maansikanga kunchinchukupotundane vastavanni kavi teliyacesadu vandella samsara jeevitalaku pratibimbam haneef 'vandella kapuralu kavali' muslim minority kavitvaniki swachthanu saripurnatanu chekurchindi muslim stree vaada kavitvam muslim stree vaada kavitvamante muslim streel rasinde avutundi ikkada sanubhutiki tavuledu muslim stree puttuka muslim unikini nirdharistundi a varlapu streenaina rendu saktulu darunanga kattady chestayi okati matam rendu purushadhipatyam anchiveta vishayam oka nijam gurtinchali dalita hindu strilakante muslim stree ekkuva nirbandhalaku badhalaku guravutunnadi e amsanni muslim minority streevada kavayitrulu balanga kavitvikarincharu muslim stree vadulu islam matamloni chandus sampradayalanu matha peddala venukabatu alochanalanu mukhyanga streela samasyalaina burakha vantillu padaggadi vidya shariat muslim personal law modaline vatipai korada jhalipinchi muslim stree abhivruddiki tarkananga kavithalu rastunnaru 'adhunika telugu sahityaniki astitva udyamalu dixoochiga unte muslim minority vada kavitvaniki muslim streevada kavitvam dixoochiga vundi munduga muslim stree vaada kavitvanni gurinchi matladetappudu 1992 december 25na andhrajyothi sachitra varapatrikalo vachchina sreemathi s rajiya begangari 'alage annaru' kavitanu gurinchi charchinchaka thappadu balyamlo chinnapillavi nikem telsu kurcho annaru yavvanamlo uduku raktam manchi chedu telidu kurcho annaru vruddhapyam musildanivi inkem chestav kurcho annaru avakasam rananduku kopanga ledhu naku kursoni kursoni baddakam vachinanduke badhaga vundi purushadhipatya bhavajalam adhikara daham samajam streeni balyam nunchi vruddhapyam varaku a ritilo bandiga kattady chesi bayati prapanchamlo sambandham lekunda anagadrokkutunna vidhananni akshara rupamlo chitrinchina theeru adbhutamainadi 8 padalaina e kavitha ento visalamaina arthannichi telugu sahitya strivadaniki muslim strivadaniki niluvettu tarkananga nilichindi e kavitvam bhoomimida unna prathi streeky vartistundi razia begum garu e kavitha rasenatiki muslim stree ayina muslim stree vaada identity rayaledu oka stree vadiga raasi andari mannana pondindi muslim minority stree vaada kavitvaniki dhikkara gontuka shahjahana eme rakato muslim streel samajam paduthunna anchiveta amanushatvam vettichakiri inti nirbandham avidya modaline vastavala musugulni battabayalu chesindi shahjahana praveshanto muslim stree vaada kavitvaniki vanne chekurindi muslim stree jeevitha badhal sudigundalni gadhanga telugu sahiti chitrapatamlo abhivarninchindi anduvalla muslim streevada kavitvaniki shahjahananu pratinidhiga sahitilokam gurlinchindi ooha teliyani vayasulo gummaniki parada kadite rangu rangula kutchulu chusi murisipoyedanni appude swetchaki modati bedi ani telusukoleni pasidanni gummaniki kattenatte amma mukhaniki nakhach kadite swapnam lanti jindagiki shapamani appatlo teliyanidanni everest lenti chandrudni saitham takostunna strilanu chustu samsaralenanti inglish channelny edutunna e taram strilanu chustu inka inka mounanga undadam navalla kadu shahjahana 'parda hatake dekho' prapanchamlo a matanni gamaninchina streela daggamkotchesariki purushadhipatyam vividha ankshalu vidhinchi kattady chestunnayi bharatiya samajam dalitha streela kanna hindu streela kanna muslim streel marinta venukabadi unnaru deeniki pradhana karanam pratyakshanga matapeddalu vidhinchina kattubatlu aithe parokshanga purushadhipatyam vidhinchina sharatulu muslim streela abhivruddiki addukatta vestunnai islam arab desalalone muslim streel everest sikharalu ingliesh chanellu antarakshanni saitham adhirohistu prapancha technology arachetilo veekshistunnaru kani akkada leni ankshalu bharatadeshwari muslim strilaku enduku ani matadipatulanu shahjahana niladisthunna vainanni gamanimchavachchu 1500 samvatsaralaku purvam arabia desamlo streeky gauravapradamaina sthanam ledhu kondaru adapilla pudutune bhusthapitam chesevaru oka adadani kosam endaro purushulu kattulu doosukunevaru odina tegala strilanu gelichina tegala purushulu vavivarasallekunda anubhavinchevaaru alanti paristhitullo mohammed pravakta stree sthitigathulanu gananiyanga meruguparicharu streela likhitapurvaka sammathitone vivaham jarigela chesaru vivaha bandhapu raddu adhikaram stree purushuliddariki kalpincharu ani rahantulla garu oka vastavanni teliyajesaru prastuta samajam ivi sangga acharanalo levu kabatti muslim streela anchiveta gurinchi antha gadhanga nikkachchiga muslim minority kavithallo muslim stri vadam chotuchesukundi amma nuvvu rangu rangula chiralu kattukuni shaadi sambaranikelite chudalanunde errerrati paccha pachati chemky cheerallo nagulmira mogalali jendalla nadustunte choodalanumdamma nee chuttu mulla kanchelu patin maa ajgananantantatini chittu kagitala vadiki ammeyalanumdi khaja 'maa' ammanu bayati prapanchamlo burkhalo chudam thappa amma andanga chemky shaadi sambaraniki vajbe samyalo kuda amma swachchanu choodlekapotunnaanu ani kavi premaga cheppina theeru badhakaram kani shaadi sambarala dadapu andaru bandhuvule untaru atuvanti samayamlo kuda amma rangurangula chemky chiralu dharimchi vachchina matam vidhinchina 'burakha' addupaduthundi ila shaadi sambarallo kuda amma swecchha harinchi vestondi purushadhipatyam shadilo sontha kutumbikula naduma kuda 'burakha' ammanu harinchiveyadam kaviki nachchaledu matam musugulo purushadhipatyam vidhinchina kattubatlanu chittucittuga chittukagitamla vadiki ammeyalani kavi du khabharitamga cheppina vidhanam badhakaram ayidu nelalake nalugu nelala kaduputo kattukunnodilesinashaddar talaq ivvagane a bandhalato sambandham ledane magatanapu dheema marosari sehra kattukundi tana abba mukham erugani naa masoom bachchini naa mundo prashnaga nilabetti pottameedi peddaparesion kathigatlatho vadalipoyina sehra janapakanga nannu migilchi vaadu nalugurnaina nikha kattukovachchani cheptunna naa shariatnu niladiyyakunda ela unda moodu nelala iddat calanice manovarthi chellinchalane naa 'personal law'nu prashninchdaniki nene mounaporatanikaina siddame shamshad begam-'personal law' matha chandasla acharya sampradayalu streela jeevitanni ela durbhara sthitiloki nettutunnayane tarunanni kavayitri vishleshinchindi nettina tarvata muslim streel samajam paduthunna badhanu nashtanni teliyazestu matanni sansmaran cheyadaniki nenu a poratanikaina siddamenani shamshad begam garu cheppina theeru advitiyam matha bandhanalu muslim streela swachchanu a vidhanga kattady chesayo javeria muslim vanitha kavithalo ventade needle vekkirinche manushulani choosaka navvadam edvadam purtiga marichipoyanu nenu matladuthunna swaram nadikadu kallunna chustunnadi nijam kadu jeevithapu atupotla naduma alasina alani karigipoina pagati kalani meti bharatavani neti sagatu muslim vanitani jameria 'muslim vanitha' bharatadesamlo sagatu muslim streela anchiveta jeevitalanu akshararupamlo javeria chitrinchina vidhanam alochinchadginadi muslim purushadhipatyam strilanu 'matachandasam' ane sampradaya tera venukane uncham valla varikantu oka sontha vyaktitvanni erpagurchukolekonnaru sonta vyaktitvam leni karananga purushuni chetilo jeevamunna atabommaluga marutunnaru tana venukabatunu venukabatuga kuda gurtinchaleni sthitilo muslim streel anchiveyabaddaru 'purushadhipatya ahankara' teran muslim stree samajam chedinchagaligite tanu neti samaja vastavasthitini grahinchagalugundi prastuta kalamlo muslim minority hetuvada marxist drukpathalato kalam jhalipinchi poratam cheste kani muslim samajam streel abhivruddhi chendarane vishayanni grahincharu 'balyamlo nikha chesi duram chesaru nee balya madhurasmatini kattubatla peruto nee abhivruddini safa chesi techchar ninnu hinasthitici matam acharala parit marcharu ninnu kevalam santhanam kane yantranga asthi hakku lekunda arthika asamana chesaru ninnu anathanu parda chatun unchi ninnu samadhi chestunnaru ohena kasta alochinchu vajida khatun 'parda ' muslim samajam akkadakkada adpillalaku chinnatanamlone pellillu chesi vaari madhura gnapakalanu duram chesthondi purushadhipatyam snehiturallato adipadi santoshanga undavalasina vayassulo matha peddalu vidhinchina sampradaya musugu muslim adapillala swachchanu samadhi chesi andhakaramane tera terichi andulo varini neduthondi purushahankaram muslim pillalu kevalam pillalanu kane yantranga kattubatla naduma bandhinchabadutune unnaru ippatiki kuda stri purushuliddariki samana hoda ledhu asthi hakkulo kuda kalam marutunnakoddi muslim streela hakkulanu samadhi cheyadame kakunda muslim mata peddalu purushaswamya vyavasthaku anugunanga vatini savarinchukuni streela hakkulni kalarastunnaru vajida khatun garu chivari 2 padaallo varninchina teeru prathi muslim stree alochinchadginadi 'chellellara parada chatun mimmalni kattady chesi mee abhivruddiki addukatta vesi mimmalni banisaluga chestunnaru muslim mata chandus andhakara purushadhipatyanni samadhi cheste thappa mee jeevitalaku velugubata radu' ani kavayitri melkoluputondi parada venukanunna avedanani vennalanti manassu gani medhoshaktini gani amayakatwanni gani gundello daagi unna badhani eppudaina gurtinchara pardalo daagi unna kallallonchi enny ashrubinduvulu nelaralayo enadaina leckagattara matha kattubatlu intine oka bandikhana ganu bharte daivansa sambhutidiganu pillale jeevitha gamyanga chitrinchi saswathanga swachchanu uritistunnayi shake ibrahim 'bandi ka zindagi' tarataraluga muslim stree anchivetaku guravutune vundi matha acharalu streeni oka bhagyaga banisaga intlo vettichakiri chese naukarugaa chudam thappa tanalo daagi unna srujanmathaka shaktini gani samardyanni gani ashalni gani korikalni gani swachchanu gani gurlinchakunda victattahasanni pondutunnadi muslim mata chandasatvam e vidhanga muslim streela ashayanni kattady chesi nadibajarullo vaari swachchanu uri tistunnayane kavi avedana antuchikkanadi prathi kanpu sizerian kattula kadupu kothainappudu prathi jananamu maa rupee meeda gudi bandainappudu iddaru ane padam chuttu signs vrittam geestunnappudu are battebaj nee kallaku pandila padimandini kanevallala kanabaddunnam desanni maa nalusulato nimpevallamra memu shehnaaz azam 'battebaj ' sadharananga muslim stree anagane chalamandilo anekamandiki janmanivvadaniki puttina stree ane apoha vundi janmaniche pratisari kadupu kattulakotha avutunte padula mandiki janma ela ivvagalanu ani kavayitri asahnanni avedananu vyaktam chesindi akasamlo sagam assembly sagam alochanallo sagam adishakti mahashakti pulirajula vishakorallo nalige abhagyadanam stree magamaharajula dhanadaharthiki katnam kolimilo kaledi stree patabasti mukhmal dupattalo shekula saradaku avirayyedi stri samanatvam samanatvam annie ukadampudu upanyasale banisaga maliche yatnale khalida parveen-'swecchha musugulo ' purushaswamya vyavastha satabdaluga adhikaranni chelaistu strilanu samajikanga rajkiyanga arthikanga laingikanga antargatanga bahyanga netici anchivestunnaru kani purushadhipatya matallo chetallo streeni jeevithamlo sagam ani annintilo samana hoda ani nammimpajesi mosapuchutune unnarani kavayitri cheppina vidhanam alochinchadginadi muslim minority stree vaada kavitvamlo paradameeda oka konamlo vyathirekanga vaste maro konamlo paradan samarthistu anukulanga rasina kavulu kavayitrulu lekapoledu ninna virabusina andalapai enno jatala kannulu valevi nannu sprishinchalani maamsam muddalni takalani enno chetulu taratladevi chirugulu padina bathukki roja atukulu padalasinde velisipoyina rangulni pota posin sogasulni vady vady kuttudipotunna salvaar kameezulni dayaleni andam vadipotune vundi shahnaj 'ippudu nenokkathine ' muslim samajam pradhananga venukabadutaku pratyaksha karanam peddarikamaite paroksha karanam matamloni konni mood acharalu kavayitri peddankanni akalini dundagula nunchi rakshana pondadaniki burakha muslim strilaku rakshana kavacamla upayogapaduthundani cheppina thirulo vastavam lekapoledu muslim minority vadula kavulu shahnaj garu cheppina matalu vastavame ayina adhunika kalamlo vati avasaram entavaraku undali anedi alochinchadgalani chepparu o ativadam maa pardalapai dadi chestu parda pragathiki pratibandhakam antu abaddhala gollato maa dehaala ninda rakkutundi sabhyatalni sanska ruthulni vidichi mammalni nallagabbilala mantadi taru dabbala mantadi faridaban 'mem banisalam kamu' kavayitri drushtilo 'o ativadam' ante muslim streevada kavitvaniki margadarshakulaina muslim stree vadanni rase kavayitrulu acharya sampradayalain 'parda'nu takkuva chooputo rasharani sanskrithulni gouravinchaledani takkuva chooputo rasharani avedanato palikina kavitvaksharalu every badhanu vaaru chebitene vishvasaniyatalo gadat untundi aa badha padinavarike telustundi faridaban cheppina matallo vastavam lekapoledu alaage muslim minority kavulu kavayitrula kavitvamlonu vastavam lekapoledu aithe marutunna kalanugunanga a matamlonina samskaranalu thappavu samskaranalu jaragani pakshamlo aa mata samajabhivruddy akkadito agipothundi kalanugunanga samajam marpulu vastene hindu matmaina islam matmaina christian matmaina bouddha matmaina sikh matmaina manugadalo untayi edi emina bhavitharala vidyavettalu samajam edi vastavam edi avastavamani gurtinchagalige medhassu varike vundi muslim minority kavitvamlo stree anchiveta gurinchi vibhinna rakala vastuvulanu gamanimcham paradaku vyathirekanga paradaku anukulanga vachchina kavitvanni chusham kani paradaku maro rupam bidavari parada ayina 'chaddar'bhavani vachchina oke oka kavitha mohammed rafeegari 'ammizan chaddar' muslim minority kavitvamlo chotuchesukundi e kavitha 2005low selute the great pratyeka sanchikalo vacchindi chinnappudu ammizan chaddar bayatiki tiste chalu egiri gantulese vadni kottha kottha apyayatalevo manasulo medilevi mallepuvu lanti chaddarlu tadimi chuste amma odila hayiga undedi alochanalu perigekoddi ammizan telgati chaddar venuka nallati needalevo bhayapettivi parugulette prapancham mundu pasipapalla migilunna bhabhi behan ammizan aapalanu chusi ghana sampradaya varasulani meesalu meleyana anta alla daya ani anantha karunamayudni bonekkinchana parada kone stomata leni prajalu 'chaddar'nu koni dharistaru e chaddar maha aithe rendu vandala rupeel lope untundi anduke samanya muslimlu grameena prantalalo unde muslimlu netici ekkuvaga vitine dharistunnaru anduke e chaddarlu 'garibu parada' 'garibu chaddar' ani pilustaru chinnatanam amma intlonunchi 'chaddar' teesindante chalu pillala anandaniki hadd adupulundavu anduke pillalaku ammie chaddar kuda amma odila kanipistundi parada kanna chaddarlu rendu chetulato sarirampai nunchi jaripokunda dharinchalante kashtam edaina luggage pattukunnappudu leda bus ekke samayamlo ammie chaddartho paduthunna thippalu a chaddar chatun vadina akka chellela anchiveta venukabatutanam chivariki dayamayudaina allapai kuda asantriptini prakatistunnadu kavi muslim stree abhivruddhi kakapote muslim samajam abhivruddhi chendadu muslim samajam muslim streel abhivruddhi chendalante ja matam vidhinchina acharallo konnintilo samskaranalu jaragali ja pitruswamya vyavasthalo marpulu ravali ja strilaku adhunika vidyapai avagaahana kaliginchali ja samajam stri purushulaku samana hakkulu undela chudali e vishayalapai muslim samajam muslim minority sahityam drishti sariste muslim streel",
+    "next_word": "merugupadataru",
+    "predictions": {
+      "gpt2": {
+        "top1": "al",
+        "top5": [
+          "al",
+          "av",
+          "ul",
+          "ud",
+          "ar"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 235.46
+      },
+      "mgpt": {
+        "top1": "ab",
+        "top5": [
+          "ab",
+          "ch",
+          "sam",
+          "",
+          "av"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 195.3
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "al",
+        "top5": [
+          "al",
+          "av",
+          "on",
+          "ud",
+          "ur"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 147.87
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "e",
+        "top5": [
+          "e",
+          "am",
+          "ch",
+          "anu",
+          "an"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 3531.19
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 147.87,
+    "error_categories": [
+      "data_sparsity"
+    ]
+  },
+  {
+    "idx": 48,
+    "prefix": "hello idi xyz electronics numchi vachchina email kotha lap top koraku mi order shipping cheyabadindani meeku teliyazeyadaniki memu rastunnamu package kosam tracking number 123-456-789 marinni vivaranatmaka navikaranala koraku dayachesi mee email ni tanikhi cheyandi mee order chandra dhanyavaadaalu mariyu oka goppa",
+    "next_word": "roja",
+    "predictions": {
+      "gpt2": {
+        "top1": "k",
+        "top5": [
+          "k",
+          "me",
+          "m",
+          "b",
+          "mar"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 703.14
+      },
+      "mgpt": {
+        "top1": "ch",
+        "top5": [
+          "ch",
+          "k",
+          "v",
+          "g",
+          "tel"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 387.43
+      },
+      "gpt2-finetuned-orig": {
+        "top1": "k",
+        "top5": [
+          "k",
+          "v",
+          "sam",
+          "mar",
+          "me"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 146.64
+      },
+      "gpt2-finetuned-custom": {
+        "top1": "mariyu",
+        "top5": [
+          "mariyu",
+          "e",
+          "ala",
+          "lo",
+          "alu"
+        ],
+        "in_top1": false,
+        "in_top3": false,
+        "in_top5": false,
+        "ppl": 5174.47
+      }
+    },
+    "n_models_wrong": 4,
+    "ft_ppl": 146.64,
+    "error_categories": [
+      "data_sparsity"
+    ]
+  }
+]

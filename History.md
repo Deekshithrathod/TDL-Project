@@ -100,36 +100,29 @@ Chronological log of completed tasks for the Romanized Telugu Language Model pro
 
 ---
 
-## Week 3 — Fine-Tuning Preparation
-
-### Task 3.1 — Prepare CLM Training Dataset
+### Task 2.2 — Train Custom BPE Tokenizers
 **What was done:**
-- Wrote `scripts/prepare_dataset.py` with argparse CLI (`--input`, `--output`, `--tokenizer`, `--max_length`)
-- `--tokenizer` accepts both HF model IDs (e.g. `gpt2`) and local BPE directories (e.g. `tokenizers/tokenizer_codemixed`) — detected by checking for `vocab.json` presence
-- Custom BPE directories are wrapped as `PreTrainedTokenizerFast` to get HF dataset API compatibility
-- Worked around a `tokenizers==0.22.2` / `transformers` version mismatch: `PreTrainedTokenizerFast` tries to call `enable_truncation(direction=...)` which 0.22.x doesn't support — fixed by calling without truncation args and slicing `input_ids[:max_length]` manually in the BPE tokenize function
-- Tokenizes for CLM: `labels = input_ids.copy()` (shift handled by `DataCollatorForLanguageModeling` at training time)
-- 80/10/10 split with `seed=42` for reproducibility
-- Verification block decodes 3 train examples and warns on high UNK rate
-- Stats block reports avg token length, max length, truncation rate; warns if >30%
-- Saves HuggingFace `DatasetDict` to disk via `save_to_disk()`
-- Writes `report/dataset_preview_{name}.txt` with first 20 decoded train examples
-- Added `data/clm_dataset_*/` to `.gitignore`
+- Wrote `scripts/train_tokenizer.py` with argparse CLI (`--input`, `--outdir`)
+- Loads NLTK `words` corpus (234k words) at startup; auto-downloads if missing
+- English-ratio filter: keeps sentences where <70% of words appear in the NLTK English dictionary — identifies Telugu-dominated sentences for the second tokenizer
+- Trains `ByteLevelBPETokenizer` (vocab_size=12000, min_frequency=2, 4 special tokens) on two corpora:
+  - **tokenizer_codemixed**: full 296,903-sentence corpus
+  - **tokenizer_romanized_only**: 274,035-sentence Telugu-dominated subset (92.3%)
+- Writes filtered sentences to a `tempfile`, trains, then deletes temp file
+- Reload check: reloads both tokenizers from disk via `from_file()` and asserts token output matches pre-save
+- Verification block: prints token splits for 5 test sentences across both tokenizers
+- Added `nltk` to `requirements.txt`; updated `.gitignore` comment
 
-**Results:**
-
-| Dataset | Tokenizer | Train | Val | Test | Truncation |
-|---|---|---|---|---|---|
-| `clm_dataset_gpt2` | GPT-2 | 237,522 | 29,690 | 29,691 | 56.1% ⚠ |
-| `clm_dataset_codemixed` | custom BPE | 237,522 | 29,690 | 29,691 | 45.4% ⚠ |
-
-56% truncation rate for GPT-2 vs 45% for custom BPE — consistent with custom tokenizer's lower fertility (1.63 vs 2.99 tokens/word). The high truncation rate is due to multi-sentence scraped blobs in the corpus; a pack_sequences strategy would recover that context.
+**Training results:**
+- Both tokenizers reached full 12,000 vocab target
+- Key improvement over GPT-2 baseline: `"meeru ela unnaru"` → 3 tokens (vs 6 with GPT-2); `"nenu ikkadiki vastunnanu"` → 5 tokens (vs 10 with GPT-2)
+- `"naku Telugu vastundi"` still splits `Telugu` due to capital T not seen in lowercased training data — expected
 
 **Key files:**
-- `scripts/prepare_dataset.py`
-- `report/dataset_preview_clm_dataset_gpt2.txt`
-- `report/dataset_preview_clm_dataset_codemixed.txt`
-- `.gitignore` (updated — excludes `data/clm_dataset_*/`)
+- `scripts/train_tokenizer.py`
+- `tokenizers/tokenizer_codemixed/vocab.json` + `merges.txt`
+- `tokenizers/tokenizer_romanized_only/vocab.json` + `merges.txt`
+- `requirements.txt` (updated — added `nltk`)
 
 ---
 
@@ -171,29 +164,36 @@ Key spotlight observations:
 
 ---
 
-### Task 2.2 — Train Custom BPE Tokenizers
-**What was done:**
-- Wrote `scripts/train_tokenizer.py` with argparse CLI (`--input`, `--outdir`)
-- Loads NLTK `words` corpus (234k words) at startup; auto-downloads if missing
-- English-ratio filter: keeps sentences where <70% of words appear in the NLTK English dictionary — identifies Telugu-dominated sentences for the second tokenizer
-- Trains `ByteLevelBPETokenizer` (vocab_size=12000, min_frequency=2, 4 special tokens) on two corpora:
-  - **tokenizer_codemixed**: full 296,903-sentence corpus
-  - **tokenizer_romanized_only**: 274,035-sentence Telugu-dominated subset (92.3%)
-- Writes filtered sentences to a `tempfile`, trains, then deletes temp file
-- Reload check: reloads both tokenizers from disk via `from_file()` and asserts token output matches pre-save
-- Verification block: prints token splits for 5 test sentences across both tokenizers
-- Added `nltk` to `requirements.txt`; updated `.gitignore` comment
+## Week 3 — Fine-Tuning Preparation
 
-**Training results:**
-- Both tokenizers reached full 12,000 vocab target
-- Key improvement over GPT-2 baseline: `"meeru ela unnaru"` → 3 tokens (vs 6 with GPT-2); `"nenu ikkadiki vastunnanu"` → 5 tokens (vs 10 with GPT-2)
-- `"naku Telugu vastundi"` still splits `Telugu` due to capital T not seen in lowercased training data — expected
+### Task 3.1 — Prepare CLM Training Dataset
+**What was done:**
+- Wrote `scripts/prepare_dataset.py` with argparse CLI (`--input`, `--output`, `--tokenizer`, `--max_length`)
+- `--tokenizer` accepts both HF model IDs (e.g. `gpt2`) and local BPE directories (e.g. `tokenizers/tokenizer_codemixed`) — detected by checking for `vocab.json` presence
+- Custom BPE directories are wrapped as `PreTrainedTokenizerFast` to get HF dataset API compatibility
+- Worked around a `tokenizers==0.22.2` / `transformers` version mismatch: `PreTrainedTokenizerFast` tries to call `enable_truncation(direction=...)` which 0.22.x doesn't support — fixed by calling without truncation args and slicing `input_ids[:max_length]` manually in the BPE tokenize function
+- Tokenizes for CLM: `labels = input_ids.copy()` (shift handled by `DataCollatorForLanguageModeling` at training time)
+- 80/10/10 split with `seed=42` for reproducibility
+- Verification block decodes 3 train examples and warns on high UNK rate
+- Stats block reports avg token length, max length, truncation rate; warns if >30%
+- Saves HuggingFace `DatasetDict` to disk via `save_to_disk()`
+- Writes `report/dataset_preview_{name}.txt` with first 20 decoded train examples
+- Added `data/clm_dataset_*/` to `.gitignore`
+
+**Results:**
+
+| Dataset | Tokenizer | Train | Val | Test | Truncation |
+|---|---|---|---|---|---|
+| `clm_dataset_gpt2` | GPT-2 | 237,522 | 29,690 | 29,691 | 56.1% ⚠ |
+| `clm_dataset_codemixed` | custom BPE | 237,522 | 29,690 | 29,691 | 45.4% ⚠ |
+
+56% truncation rate for GPT-2 vs 45% for custom BPE — consistent with custom tokenizer's lower fertility (1.63 vs 2.99 tokens/word). The high truncation rate is due to multi-sentence scraped blobs in the corpus; a pack_sequences strategy would recover that context.
 
 **Key files:**
-- `scripts/train_tokenizer.py`
-- `tokenizers/tokenizer_codemixed/vocab.json` + `merges.txt`
-- `tokenizers/tokenizer_romanized_only/vocab.json` + `merges.txt`
-- `requirements.txt` (updated — added `nltk`)
+- `scripts/prepare_dataset.py`
+- `report/dataset_preview_clm_dataset_gpt2.txt`
+- `report/dataset_preview_clm_dataset_codemixed.txt`
+- `.gitignore` (updated — excludes `data/clm_dataset_*/`)
 
 ---
 

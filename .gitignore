@@ -36,6 +36,9 @@ data/*.zip
 data/processed/
 data/clm_dataset_*/
 
+# Colab output staging directory
+outputs/
+
 # Claude Code
 .claude/
 

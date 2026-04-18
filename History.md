@@ -189,12 +189,28 @@ Key spotlight observations:
   - Updated Colab notebook cell to `--batch_size 64 --max_train_samples 50000`
   - Expected training time with fixes: **~20 minutes** on T4 (50k samples → 3,906 steps/epoch at batch=64)
 
+**Training results (Colab T4, 50k samples, 4 epochs):**
+
+| Epoch | Train Loss | Val Loss | Val PPL |
+|-------|-----------|----------|---------|
+| 1     | 4.9085    | 4.7241   | 112.63  |
+| 2     | 4.7648    | 4.5626   | 95.83   |
+| 3     | 4.6977    | 4.4878   | 88.93   |
+| 4     | 4.6607    | 4.4566   | **86.20** |
+
+**Before/After PPL on 15 Telugu sentences:**
+- All 15 sentences improved (lower PPL after fine-tuning)
+- Avg pretrained GPT-2 PPL: ~4,244
+- Avg finetuned PPL: ~481
+- Best improvement: `"adi evaru chepparu"` 9,634 → 344 (96.4% drop)
+- PPL still high in absolute terms — expected given tokenizer mismatch and domain gap. Improvement trend is the key result.
+
 **Key files:**
 - `scripts/finetune_gpt2_lora.py`
 - `notebooks/colab_lora_finetune.ipynb`
-- `models/gpt2_lora_finetuned/` (populated after Colab run)
-- `report/finetune_comparison.csv` (populated after Colab run)
-- `report/perplexity_curve.csv` (populated after Colab run)
+- `models/gpt2_lora_finetuned/` — adapter weights (~1.2 MB, `.safetensors`)
+- `report/finetune_comparison.csv`
+- `report/perplexity_curve.csv`
 
 ---
 
